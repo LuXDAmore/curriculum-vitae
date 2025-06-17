@@ -1,8 +1,9 @@
 /* stylelint-disable */
 css-doodle {
 
-    --color: @p(#feca57, #e74c3c, #feca57, #e74c3c, #feca57, #feca57);
+    --color: @p(#F2CD88, #e74c3c, #F2CD88, #e74c3c, #F2CD88, #F2CD88);
     --animationDelay: @size() * @i();
+
     --rule: (
 
         :doodle {

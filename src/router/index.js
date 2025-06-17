@@ -1,10 +1,10 @@
-import Resume from '@/pages/resume';
-import Home from '@/pages/home';
 import Vue from 'vue';
 import Router from 'vue-router';
+import Resume from '@/pages/resume';
+import Home from '@/pages/home';
 
 Vue.use(
-    Router,
+    Router
 );
 
 export default new Router(

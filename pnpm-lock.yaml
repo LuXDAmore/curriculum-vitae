@@ -24,68 +24,71 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       vue:
-        specifier: ^2.6.11
+        specifier: ^2.7.16
         version: 2.7.16
       vue-router:
-        specifier: ^3.1.6
+        specifier: ^3.6.5
         version: 3.6.5(vue@2.7.16)
     devDependencies:
       '@babel/cli':
-        specifier: ^7.8.4
+        specifier: ^7.27.2
         version: 7.27.2(@babel/core@7.27.4)
       '@babel/core':
-        specifier: ^7.8.4
+        specifier: ^7.27.4
         version: 7.27.4
       '@babel/plugin-transform-runtime':
-        specifier: ^7.8.3
+        specifier: ^7.27.4
         version: 7.27.4(@babel/core@7.27.4)
       '@babel/preset-env':
-        specifier: ^7.8.4
+        specifier: ^7.27.2
         version: 7.27.2(@babel/core@7.27.4)
       '@babel/register':
-        specifier: ^7.8.3
+        specifier: ^7.27.1
         version: 7.27.1(@babel/core@7.27.4)
       '@nuxtjs/eslint-config':
         specifier: ^2.0.2
         version: 2.0.2(eslint@6.8.0)(typescript@3.9.10)
+      '@tsconfig/recommended':
+        specifier: ^1.0.9
+        version: 1.0.9
       '@vue/cli-plugin-eslint':
-        specifier: ^4.2.2
+        specifier: ^4.5.19
         version: 4.5.19(@vue/cli-service@4.5.19(less-loader@5.0.0(less@3.13.1)(webpack@4.47.0))(lodash@4.17.21)(prettier@1.19.1)(raw-loader@4.0.2(webpack@4.47.0))(typescript@3.9.10)(vue-template-compiler@2.7.16)(vue@2.7.16))(eslint@6.8.0)
       '@vue/cli-service':
-        specifier: ^4.2.2
+        specifier: ^4.5.19
         version: 4.5.19(less-loader@5.0.0(less@3.13.1)(webpack@4.47.0))(lodash@4.17.21)(prettier@1.19.1)(raw-loader@4.0.2(webpack@4.47.0))(typescript@3.9.10)(vue-template-compiler@2.7.16)(vue@2.7.16)
       '@vue/eslint-config-prettier':
         specifier: ^6.0.0
         version: 6.0.0(eslint-plugin-prettier@3.4.1(eslint@6.8.0)(prettier@1.19.1))(eslint@6.8.0)(prettier@1.19.1)
       autoprefixer:
-        specifier: ^9.7.4
+        specifier: ^9.8.8
         version: 9.8.8
       babel-eslint:
         specifier: ^10.1.0
         version: 10.1.0(eslint@6.8.0)
       babel-loader:
-        specifier: ^8.0.6
+        specifier: ^8.4.1
         version: 8.4.1(@babel/core@7.27.4)(webpack@4.47.0)
       browserslist:
-        specifier: ^4.8.7
+        specifier: ^4.25.0
         version: 4.25.0
       chalk:
         specifier: ^3.0.0
         version: 3.0.0
       check-node-version:
-        specifier: ^4.0.2
+        specifier: ^4.2.1
         version: 4.2.1
       compression-webpack-plugin:
         specifier: ^3.1.0
         version: 3.1.0(webpack@4.47.0)
       concurrently:
-        specifier: ^5.1.0
+        specifier: ^5.3.0
         version: 5.3.0
       connect-history-api-fallback:
-        specifier: ^1.5.0
+        specifier: ^1.6.0
         version: 1.6.0
       copy-webpack-plugin:
-        specifier: ^5.1.1
+        specifier: ^5.1.2
         version: 5.1.2(webpack@4.47.0)
       cpx:
         specifier: ^1.5.0
@@ -100,49 +103,49 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0
       eslint-config-standard:
-        specifier: ^14.1.0
+        specifier: ^14.1.1
         version: 14.1.1(eslint-plugin-import@2.31.0(eslint@6.8.0))(eslint-plugin-node@11.1.0(eslint@6.8.0))(eslint-plugin-promise@4.3.1)(eslint-plugin-standard@4.1.0(eslint@6.8.0))(eslint@6.8.0)
       eslint-friendly-formatter:
         specifier: ^4.0.1
         version: 4.0.1
       eslint-loader:
-        specifier: ^3.0.3
+        specifier: ^3.0.4
         version: 3.0.4(eslint@6.8.0)(webpack@4.47.0)
       eslint-plugin-compat:
-        specifier: ^3.5.1
+        specifier: ^3.13.0
         version: 3.13.0(eslint@6.8.0)
       eslint-plugin-import:
-        specifier: ^2.20.1
+        specifier: ^2.31.0
         version: 2.31.0(eslint@6.8.0)
       eslint-plugin-jest:
-        specifier: ^23.8.0
+        specifier: ^23.20.0
         version: 23.20.0(eslint@6.8.0)(typescript@3.9.10)
       eslint-plugin-node:
-        specifier: ^11.0.0
+        specifier: ^11.1.0
         version: 11.1.0(eslint@6.8.0)
       eslint-plugin-nuxt:
-        specifier: ^0.5.1
+        specifier: ^0.5.2
         version: 0.5.2(eslint@6.8.0)
       eslint-plugin-prettier:
-        specifier: ^3.1.2
+        specifier: ^3.4.1
         version: 3.4.1(eslint@6.8.0)(prettier@1.19.1)
       eslint-plugin-promise:
-        specifier: ^4.2.1
+        specifier: ^4.3.1
         version: 4.3.1
       eslint-plugin-standard:
-        specifier: ^4.0.1
+        specifier: ^4.1.0
         version: 4.1.0(eslint@6.8.0)
       eslint-plugin-unicorn:
         specifier: 14.0.1
         version: 14.0.1(eslint@6.8.0)
       eslint-plugin-vue:
-        specifier: ^6.2.1
+        specifier: ^6.2.2
         version: 6.2.2(eslint@6.8.0)
       eventsource-polyfill:
         specifier: ^0.9.6
         version: 0.9.6
       express:
-        specifier: ^4.17.1
+        specifier: ^4.21.2
         version: 4.21.2(supports-color@6.1.0)
       extract-text-webpack-plugin:
         specifier: 4.0.0-beta.0
@@ -166,46 +169,46 @@ importers:
         specifier: ^0.21.0
         version: 0.21.0
       less:
-        specifier: ^3.11.1
+        specifier: ^3.13.1
         version: 3.13.1
       less-loader:
         specifier: ^5.0.0
         version: 5.0.0(less@3.13.1)(webpack@4.47.0)
       local-web-server:
-        specifier: ^4.0.0
+        specifier: ^4.2.1
         version: 4.2.1
       markdownlint:
         specifier: ^0.19.0
         version: 0.19.0
       mocha:
-        specifier: ^7.1.0
+        specifier: ^7.2.0
         version: 7.2.0
       mv:
         specifier: ^2.1.1
         version: 2.1.1
       node:
-        specifier: ^13.8.0
+        specifier: ^13.14.0
         version: 13.14.0
       opn:
         specifier: ^6.0.0
         version: 6.0.0
       optimize-css-assets-webpack-plugin:
-        specifier: ^5.0.3
+        specifier: ^5.0.8
         version: 5.0.8(webpack@4.47.0)
       ora:
-        specifier: ^4.0.3
+        specifier: ^4.1.1
         version: 4.1.1
       pdf-image:
         specifier: ^2.0.0
         version: 2.0.0
       postcss:
-        specifier: ^7.0.27
+        specifier: ^7.0.39
         version: 7.0.39
       postcss-combine-duplicated-selectors:
         specifier: ^8.1.0
         version: 8.1.0
       postcss-cssnext:
-        specifier: ^3.1.0
+        specifier: ^3.1.1
         version: 3.1.1(caniuse-lite@1.0.30001723)
       postcss-import:
         specifier: ^12.0.1
@@ -220,13 +223,13 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       postcss-preset-env:
-        specifier: ^6.7.0
+        specifier: ^6.7.2
         version: 6.7.2
       postcss-scoped:
         specifier: ^0.0.0
         version: 0.0.0
       postcss-scss:
-        specifier: ^2.0.0
+        specifier: ^2.1.1
         version: 2.1.1
       postcss-url:
         specifier: ^8.0.0
@@ -235,7 +238,7 @@ importers:
         specifier: ^1.19.1
         version: 1.19.1
       prettier-eslint:
-        specifier: ^9.0.1
+        specifier: ^9.0.2
         version: 9.0.2
       prettier-stylelint:
         specifier: ^0.4.2
@@ -244,7 +247,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       raw-loader:
-        specifier: ^4.0.0
+        specifier: ^4.0.2
         version: 4.0.2(webpack@4.47.0)
       rename:
         specifier: ^1.0.4
@@ -253,22 +256,22 @@ importers:
         specifier: ^2.88.2
         version: 2.88.2
       request-promise:
-        specifier: ^4.2.5
+        specifier: ^4.2.6
         version: 4.2.6(request@2.88.2)
       rimraf:
         specifier: ^3.0.2
         version: 3.0.2
       rxjs:
-        specifier: ^6.5.4
+        specifier: ^6.6.7
         version: 6.6.7
       semver:
-        specifier: ^7.1.3
+        specifier: ^7.7.2
         version: 7.7.2
       shelljs:
-        specifier: ^0.8.3
+        specifier: ^0.8.5
         version: 0.8.5
       stylelint:
-        specifier: ^13.2.0
+        specifier: ^13.13.1
         version: 13.13.1
       stylelint-config-rational-order:
         specifier: ^0.1.2
@@ -277,16 +280,16 @@ importers:
         specifier: ^20.0.0
         version: 20.0.0(stylelint@13.13.1)
       stylelint-no-unsupported-browser-features:
-        specifier: ^4.0.0
+        specifier: ^4.1.4
         version: 4.1.4(stylelint@13.13.1)
       terser-webpack-plugin:
-        specifier: ^2.3.5
+        specifier: ^2.3.8
         version: 2.3.8(webpack@4.47.0)
       testcafe:
-        specifier: ^1.8.2
+        specifier: ^1.20.1
         version: 1.20.1
       testcafe-hammerhead:
-        specifier: ^16.1.3
+        specifier: ^16.2.9
         version: 16.2.9
       url-exists:
         specifier: ^1.0.3
@@ -295,25 +298,25 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(file-loader@2.0.0(webpack@4.47.0))(webpack@4.47.0)
       vue-loader:
-        specifier: ^15.9.0
+        specifier: ^15.11.1
         version: 15.11.1(css-loader@1.0.1(webpack@4.47.0))(lodash@4.17.21)(prettier@1.19.1)(vue-template-compiler@2.7.16)(webpack@4.47.0)
       vue-style-loader:
-        specifier: ^4.1.2
+        specifier: ^4.1.3
         version: 4.1.3
       vue-template-compiler:
-        specifier: ^2.6.11
+        specifier: ^2.7.16
         version: 2.7.16
       webpack:
-        specifier: ^4.41.6
+        specifier: ^4.47.0
         version: 4.47.0
       webpack-bundle-analyzer:
-        specifier: ^3.6.0
+        specifier: ^3.9.0
         version: 3.9.0
       webpack-dev-middleware:
-        specifier: ^3.7.2
+        specifier: ^3.7.3
         version: 3.7.3(webpack@4.47.0)
       webpack-hot-middleware:
-        specifier: ^2.25.0
+        specifier: ^2.26.1
         version: 2.26.1
       webpack-merge:
         specifier: ^4.2.2
@@ -1079,6 +1082,9 @@ packages:
   '@tootallnate/once@1.1.2':
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
+
+  '@tsconfig/recommended@1.0.9':
+    resolution: {integrity: sha512-jf+a+mlsEi7V/RhoSgn7KlxCplFV2DVyfNEKSWBiUYKe2OuRVC/LZB5pUTA7KSB++c23LI66qc2VJXF7DCHGAA==}
 
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
@@ -3085,8 +3091,8 @@ packages:
     resolution: {integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==}
     engines: {node: '>=0.10.0'}
 
-  electron-to-chromium@1.5.168:
-    resolution: {integrity: sha512-RUNQmFLNIWVW6+z32EJQ5+qx8ci6RGvdtDC0Ls+F89wz6I2AthpXF0w0DIrn2jpLX0/PU9ZCo+Qp7bg/EckJmA==}
+  electron-to-chromium@1.5.169:
+    resolution: {integrity: sha512-q7SQx6mkLy0GTJK9K9OiWeaBMV4XQtBSdf6MJUzDB/H/5tFXfIiX38Lci1Kl6SsgiEhz1SQI1ejEOU5asWEhwQ==}
 
   elegant-spinner@1.0.1:
     resolution: {integrity: sha512-B+ZM+RXvRqQaAmkMlO/oSe5nMUOaUnyfGYCEHoR8wrXsZR2mA0XVibsxV1bvTwxdRWah1PkQqso2EzhILGHtEQ==}
@@ -9785,6 +9791,8 @@ snapshots:
 
   '@tootallnate/once@1.1.2': {}
 
+  '@tsconfig/recommended@1.0.9': {}
+
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
@@ -9903,7 +9911,7 @@ snapshots:
   '@types/vfile@3.0.2':
     dependencies:
       '@types/node': 24.0.3
-      '@types/unist': 2.0.11
+      '@types/unist': 3.0.3
       '@types/vfile-message': 2.0.0
 
   '@types/webpack-dev-server@3.11.6(debug@4.4.1)':
@@ -10919,12 +10927,12 @@ snapshots:
   browserslist@2.11.3:
     dependencies:
       caniuse-lite: 1.0.30001723
-      electron-to-chromium: 1.5.168
+      electron-to-chromium: 1.5.169
 
   browserslist@4.25.0:
     dependencies:
       caniuse-lite: 1.0.30001723
-      electron-to-chromium: 1.5.168
+      electron-to-chromium: 1.5.169
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
 
@@ -11919,7 +11927,7 @@ snapshots:
 
   debug@3.2.6(supports-color@6.0.0):
     dependencies:
-      ms: 2.1.1
+      ms: 2.1.3
     optionalDependencies:
       supports-color: 6.0.0
 
@@ -12207,7 +12215,7 @@ snapshots:
 
   ejs@2.7.4: {}
 
-  electron-to-chromium@1.5.168: {}
+  electron-to-chromium@1.5.169: {}
 
   elegant-spinner@1.0.1: {}
 
@@ -13440,7 +13448,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
 

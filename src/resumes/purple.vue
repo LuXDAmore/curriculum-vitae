@@ -76,8 +76,8 @@
 </template>
 
 <script>
-    import { getVueOptions } from './options';
     import Vue from 'vue';
+    import { getVueOptions } from './options';
 
     const name = 'purple';
 

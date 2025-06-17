@@ -7,13 +7,9 @@ const fs = require(
     , http = require(
         'http',
     )
-    , config = require(
-        '../config',
-    )
     , puppeteer = require(
         'puppeteer',
     )
-
     , { interval } = require(
         'rxjs',
     )
@@ -23,6 +19,9 @@ const fs = require(
         mergeMap,
     } = require(
         'rxjs/operators',
+    )
+    , config = require(
+        '../config',
     )
 ;
 
