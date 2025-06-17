@@ -1,0 +1,12 @@
+public/
+docs/
+
+dist/
+ssr/
+design-system/
+styleguide/
+
+bower_components/
+node_modules/
+.vscode/
+.nuxt/

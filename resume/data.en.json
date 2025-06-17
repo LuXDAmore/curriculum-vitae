@@ -1,0 +1,494 @@
+{
+    "cover": {
+        "letter": "cover-letter.en.html"
+    },
+    "name": {
+        "first": "Luca",
+        "middle": null,
+        "last": "Iaconelli"
+    },
+    "about": null,
+    "position": "👴🏻 Senior developer",
+    "playing": "🏳️‍🌈 At this moment, i'm playing w/ SSR technologies pwned by Algolia and GraphQL",
+    "birth": {
+        "year": 1990,
+        "month": 6,
+        "day": 23,
+        "location": "Faenza, Ravenna, Italy"
+    },
+    "contact": {
+        "email": "lucabelli@msn.com",
+        "phone": "+39 320 333 9245",
+        "street": "Piazza Fra Saba, 6/A",
+        "city": "Faenza, Ravenna, Italy",
+        "website": "lucaiaconelli.it",
+        "linkedin": "https://linkedin.it/in/luxdamore",
+        "github": "luxdamore",
+        "medium": "luxdamore",
+        "skype": "lux99.."
+    },
+    "lang": "en, it",
+    "experience": [
+        {
+            "company": "Illimity Bank",
+            "position": "Mobile and web specialist",
+            "timeperiod": "July 2019 - now",
+            "description": "Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access",
+            "website": "https://www.illimity.com"
+        },
+        {
+            "company": "IT Auction",
+            "position": "Mobile and web specialist",
+            "timeperiod": "April 2017 - July 2019",
+            "preNote": "⤶",
+            "note": "acquired by Illimity Bank",
+            "website": "https://www.itauction.it"
+        },
+        {
+            "company": "Studio Mado",
+            "position": "Full stack developer",
+            "timeperiod": "December 2015 - April 2017",
+            "preNote": "⤶",
+            "note": "acquired by IT Auction",
+            "website": "https://www.studiomado.it"
+        },
+        {
+            "company": "IDEARTE Design",
+            "position": "Co-Founder and Creative developer",
+            "timeperiod": "December 2015 - July 2019",
+            "description": "I've started a Digital Agency and i've worked on the planning and management about the setup of the entire company",
+            "website": "https://ideartedesign.com"
+        },
+        {
+            "company": "SED Web Agency",
+            "position": "Full stack developer",
+            "timeperiod": "December 2014 - December 2015",
+            "description": "Design and development of many e-commerce, e-learning platforms, landing pages and custom plug-ins on the WordPress platform plus the development of mobile applications",
+            "website": "https://www.sedweb.it"
+        },
+        {
+            "company": "Beta Formazione",
+            "position": "Front end developer",
+            "timeperiod": "December 2013 - December 2014",
+            "description": "Design and development of many e-commerce and e-learning platforms",
+            "website": "https://www.betaformazione.com"
+        },
+        {
+            "company": "Your3Minutes",
+            "position": "Full stack developer",
+            "description": "Design and development of an online video-recruiting platform",
+            "timeperiod": "March 2014 - August 2014",
+            "website": "https://www.telegraph.co.uk/finance/businessclub/business-club-video/technology-sector-videos/10689382/your-3-minutes.html"
+        },
+        {
+            "company": "Studio Abacus",
+            "position": "Support teacher of computer science",
+            "timeperiod": "May 2011 - August 2014"
+        },
+        {
+            "company": "GEMOS Soc. Coop.",
+            "position": "Problem solver and help-desk",
+            "timeperiod": "July 2009 - December 2013",
+            "website": "https://www.gemos.it"
+        }
+    ],
+    "speaker": [
+        {
+            "name": "Linux day",
+            "topic": "Progressive web applications",
+            "website": "https://linuxday.it"
+        },
+        {
+            "name": "DevRomagna",
+            "topic": "VueJs and Nuxt",
+            "website": "https://devromagna.org"
+        },
+        {
+            "name": "Local MeetUp",
+            "topic": "Javascript, best practices and accessibility",
+            "website": "https://www.meetup.com"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Google mobile web specialist",
+            "timeperiod": "October 2017 - September 2018",
+            "description": "Nano-degree by Google",
+            "website": "https://confirm.udacity.com/LD2DHJKR"
+        },
+        {
+            "degree": "I.T.I.S. - IT Abacus",
+            "timeperiod": "September 2005 - July 2009",
+            "description": "Higher institute of IT, Math and Statistics",
+            "website": "https://itisravenna.edu.it/"
+        },
+        {
+            "degree": "Extra-courses",
+            "description": "Philosophy, Math, German, Photography, Microsoft Office, Computer security"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Problem solving",
+            "level": 99
+        },
+        {
+            "name": "CSS",
+            "level": 96
+        },
+        {
+            "name": "WordPress",
+            "level": 90
+        },
+        {
+            "name": "ReactJs",
+            "level": 63
+        },
+        {
+            "name": "NoSQL",
+            "level": 54
+        },
+        {
+            "name": "VueJs",
+            "level": 96
+        },
+        {
+            "name": "SSR",
+            "level": 92
+        },
+        {
+            "name": "Nuxt",
+            "level": 92
+        },
+        {
+            "name": "W3C",
+            "level": 90
+        },
+        {
+            "name": "HTML",
+            "level": 92
+        },
+        {
+            "name": "AWS",
+            "level": 54
+        },
+        {
+            "name": "Performance",
+            "level": 90
+        },
+        {
+            "name": "Ionic",
+            "level": 81
+        },
+        {
+            "name": "GraphQL",
+            "level": 70
+        },
+        {
+            "name": "Arduino",
+            "level": 54
+        },
+        {
+            "name": "SQL",
+            "level": 81
+        },
+        {
+            "name": "Redux",
+            "level": 81
+        },
+        {
+            "name": "Azure",
+            "level": 54
+        },
+        {
+            "name": "NodeJs",
+            "level": 92
+        },
+        {
+            "name": "Git",
+            "level": 92
+        },
+        {
+            "name": "Accessibility",
+            "level": 90
+        },
+        {
+            "name": "Unit test",
+            "level": 81
+        },
+        {
+            "name": "E2E",
+            "level": 69
+        },
+        {
+            "name": "Jest",
+            "level": 69
+        },
+        {
+            "name": "Docker",
+            "level": 69
+        },
+        {
+            "name": "Cordova",
+            "level": 81
+        },
+        {
+            "name": "Webpack",
+            "level": 72
+        },
+        {
+            "name": "PHP",
+            "level": 81
+        },
+        {
+            "name": "Laravel",
+            "level": 63
+        },
+        {
+            "name": "Javascript",
+            "level": 96
+        },
+        {
+            "name": "SASS",
+            "level": 96
+        },
+        {
+            "name": "PostCSS",
+            "level": 92
+        },
+        {
+            "name": "Apollo",
+            "level": 72
+        },
+        {
+            "name": "Zend",
+            "level": 63
+        },
+        {
+            "name": "I18n",
+            "level": 81
+        },
+        {
+            "name": "ThreeJs",
+            "level": 54
+        },
+        {
+            "name": "TypeScript",
+            "level": 72
+        },
+        {
+            "name": "Agile",
+            "level": 81
+        },
+        {
+            "name": "ES.Next",
+            "level": 92
+        },
+        {
+            "name": "AngularJs",
+            "level": 90
+        },
+        {
+            "name": "Nativescript",
+            "level": 72
+        },
+        {
+            "name": "RestAPI",
+            "level": 92
+        },
+        {
+            "name": "Symfony",
+            "level": 63
+        },
+        {
+            "name": "Electron",
+            "level": 69
+        },
+        {
+            "name": "C#",
+            "level": 54
+        },
+        {
+            "name": "C++",
+            "level": 45
+        },
+        {
+            "name": "Java",
+            "level": 36
+        },
+        {
+            "name": "Lerna",
+            "level": 72
+        },
+        {
+            "name": "Design System",
+            "level": 72
+        }
+    ],
+    "knowledge": [
+        {
+            "name": "🔥 Full stack"
+        },
+        {
+            "name": "✌ Creative"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Curriculum vitae",
+            "platform": "VueJs, NodeJs",
+            "year": 2019,
+            "description": "This resume, is built by code",
+            "url": "https://curriculumvitae.lucaiaconelli.it"
+        },
+        {
+            "name": "Miracle video agency",
+            "platform": "VueJs, Nuxt, WordPress",
+            "year": 2019,
+            "description": "Multi-awarded video agency",
+            "url": "https://miraclevideoagency.com"
+        },
+        {
+            "name": "Fallimenti.it",
+            "platform": "VueJs, Nuxt, GraphQL, Algolia",
+            "year": 2019,
+            "description": "The biggest italian's platform for bankruptcy assets",
+            "url": "https://fallimenti.it"
+        },
+        {
+            "name": "IDEARTE Design",
+            "platform": "WordPress, Javascript",
+            "year": 2017,
+            "description": "Digital agency landing page",
+            "url": "https://ideartedesign.com"
+        },
+        {
+            "name": "Aperitivus",
+            "platform": "AngularJs, PHP",
+            "year": 2016,
+            "description": "Project winner of the first Ravenna's italian-hackathon",
+            "url": "http://www.comune.ra.it/Notizie-di-copertina/Gli-esiti-e-i-vincitori-di-HackathonRavenna"
+        },
+        {
+            "name": "Tecnoacademy",
+            "platform": "WordPress, jQuery, Sensei",
+            "year": 2015,
+            "description": "Huge e-learning e-commerce for the Italian ministry",
+            "url": "https://tecnoacademy.it"
+        },
+        {
+            "name": "Royal Canin",
+            "platform": "HTML, SCSS, Javascript",
+            "year": 2014,
+            "description": "Designed by ProArte Lugo, turned into code by my team",
+            "url": "https://royalcanin.it"
+        }
+    ],
+    "hobbies": [
+        {
+            "name": "Photography",
+            "iconClass": "emoji-icons",
+            "iconText": "📸",
+            "url": "https://instagram.com/luxdamore"
+        },
+        {
+            "name": "Video editing",
+            "iconClass": "emoji-icons",
+            "iconText": "📹",
+            "url": "https://instagram.com/luxdamore"
+        },
+        {
+            "name": "Playing guitar",
+            "iconClass": "emoji-icons",
+            "iconText": "🎸"
+        }
+    ],
+    "qualities": [
+        {
+            "name": "Thinking philosophically",
+            "iconClass": "emoji-icons",
+            "iconText": "💭"
+        },
+        {
+            "name": "Intellectual curiosity",
+            "iconClass": "emoji-icons",
+            "iconText": "🧠"
+        },
+        {
+            "name": "Passionate and supportive",
+            "iconClass": "emoji-icons",
+            "iconText": "👂"
+        }
+    ],
+    "repo": [
+        {
+            "name": "🖱️ vue-css-doodle",
+            "description": "css-doodle, a web component for drawing patterns with CSS",
+            "url": "https://luxdamore.github.io/vue-css-doodle",
+            "printUrl": false
+        },
+        {
+            "name": "🖱️ vue-cursor-fx",
+            "description": "An animated cursor effect for interactive elements",
+            "url": "https://luxdamore.github.io/vue-cursor-fx",
+            "printUrl": false
+        },
+        {
+            "name": "📷 vue-fake3d-image-effect",
+            "description": "A fake 3D image effect made with WebGL",
+            "url": "https://luxdamore.github.io/vue-fake3d-image-effect",
+            "printUrl": false
+        },
+        {
+            "name": "📁 nuxt-apis-to-file",
+            "description": "Merge and transform API calls for better performances",
+            "url": "https://luxdamore.github.io/nuxt-apis-to-file",
+            "printUrl": false
+        },
+        {
+            "name": "🧠 google-udacity-mws",
+            "description": "<mark>Udacity</mark> + <mark>Google</mark> mobile web specialist PWA; <mark>Lighthouse score ~100</mark>",
+            "url": "https://github.com/luxdamore/mws-restaurant-stage-3",
+            "printUrl": false
+        }
+    ],
+    "contributions": [
+        {
+            "name": "🚀 nuxt",
+            "description": "Meta-framework for universal applications",
+            "url": "https://nuxtjs.org"
+        },
+        {
+            "name": "👔 vue-instantsearch",
+            "description": "Realtime search engine technology",
+            "url": "https://www.algolia.com"
+        },
+        {
+            "name": "🧱 aws-appsync",
+            "description": "Amazon AWS SDK JS",
+            "url": "https://aws.amazon.com/appsync"
+        },
+        {
+            "name": "🕸 apollo-graphql",
+            "description": "Apollo Data Graph Platform",
+            "url": "https://www.apollographql.com"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Google Developer Challenge Scholarship Winner",
+            "from": "Udacity and Google"
+        },
+        {
+            "name": "ECMAScript",
+            "from": "Udemy"
+        },
+        {
+            "name": "EF English language test",
+            "from": "EF Education First"
+        },
+        {
+            "name": "ECDL"
+        }
+    ]
+}

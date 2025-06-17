@@ -1,0 +1,69 @@
+{
+    // CSS
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "html.validate.styles": false,
+    // Markdown
+    "markdownlint.ignore": [
+        "CHANGELOG.md"
+    ],
+    // ESLint
+    "eslint.enable": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".vue"
+        ]
+    },
+    "stylelint.enable": true,
+    // Vue
+    "vetur.format.styleInitialIndent": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#feda8a",
+        "activityBar.activeBorder": "#019e6d",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#019e6d",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "titleBar.activeBackground": "#feca57",
+        "titleBar.inactiveBackground": "#feca5799",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveForeground": "#15202b99",
+        "statusBar.background": "#feca57",
+        "statusBarItem.hoverBackground": "#feba24",
+        "statusBar.foreground": "#15202b",
+        "activityBar.activeBackground": "#feda8a",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#feda8a",
+        "statusBarItem.remoteBackground": "#feca57",
+        "statusBarItem.remoteForeground": "#15202b"
+    },
+    "peacock.color": "#feca57",
+    "cSpell.language": "it,en",
+    "cSpell.words": [
+        "canin",
+        "resumeid",
+        "udacity"
+    ],
+    "cSpell.ignoreWords": [
+        "chunkhash",
+        "devtool",
+        "estrem",
+        "extrem",
+        "iconfont",
+        "ismo",
+        "navbutton",
+        "networkidle",
+        "ptbr",
+        "squarred",
+        "subheader",
+        "subheadline",
+        "timeperiod",
+        "zhtw"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}

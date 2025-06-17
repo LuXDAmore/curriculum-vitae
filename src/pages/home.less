@@ -1,0 +1,294 @@
+.home {
+
+    position: relative;
+    min-height: 100%;
+    padding: 0 16px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    background-color: #333;
+
+    h1 {
+
+        font-size: 60px;
+        text-transform: uppercase;
+
+    }
+
+    .table {
+
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        max-width: 1366px;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+
+    }
+
+    .table-cell {
+
+        > div {
+
+            padding: 45px 0;
+
+        }
+
+    }
+
+    .btn-link {
+
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        min-width: 245px;
+        color: #333;
+        letter-spacing: .02em;
+        text-align: center;
+        text-decoration: none;
+
+        &::before,
+        &::after {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+
+        }
+
+        &::before {
+
+            z-index: -1;
+            background-color: #0ff;
+
+        }
+
+        &::after {
+
+            z-index: -2;
+            background-color: #f0f;
+
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+
+            .link-inner {
+
+                animation: glitchy .3s ease 1;
+
+            }
+
+            &::before {
+
+                animation: glitchy .3s ease .3s infinite;
+
+            }
+
+            &::after {
+
+                animation: glitchy .3s ease infinite reverse;
+
+            }
+
+        }
+
+    }
+
+    .link-inner {
+
+        display: block;
+        height: 100%;
+        padding: 15px 25px;
+        background-color: #fff;
+
+    }
+
+    .text--white {
+
+        color: #fff;
+
+    }
+
+    .text-link {
+
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+
+        &::before,
+        &::after {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: attr( data-content );
+
+        }
+
+        &::before {
+
+            z-index: -1;
+            color: #0ff;
+
+        }
+
+        &::after {
+
+            z-index: -2;
+            color: #f0f;
+
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+
+            &::before {
+
+                animation: glitchy .3s ease .3s infinite;
+
+            }
+
+            &::after {
+
+                animation: glitchy .3s ease infinite reverse;
+
+            }
+
+        }
+
+    }
+
+    .line-link {
+
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding-bottom: 10px;
+        color: #fff;
+        font-weight: lighter;
+        font-size: 24px;
+        letter-spacing: .1em;
+        text-decoration: none;
+        border-bottom: 1px solid fade( #fff, 75% );
+
+        &::before,
+        &::after {
+
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            height: 1px;
+            visibility: hidden;
+            content: "";
+
+        }
+
+        &::before {
+
+            z-index: -1;
+            background-color: #0ff;
+
+        }
+
+        &::after {
+
+            z-index: -2;
+            background-color: #f0f;
+
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+
+            &::before {
+
+                visibility: visible;
+                animation: line-glitchy .3s ease .3s infinite;
+
+            }
+
+            &::after {
+
+                visibility: visible;
+                animation: line-glitchy .3s ease infinite reverse;
+
+            }
+
+        }
+
+    }
+
+    @keyframes glitchy {
+        0% {
+
+            transform: translate( -2px, 2px );
+
+        }
+        25% {
+
+            transform: translate( -2px, -2px );
+
+        }
+        50% {
+
+            transform: translate( 2px, 2px );
+
+        }
+        75% {
+
+            transform: translate( 2px, -2px );
+
+        }
+        100% {
+
+            transform: translate( -2px, 2px );
+
+        }
+
+    }
+    @keyframes line-glitchy {
+        0% {
+
+            transform: translate( -1px, 1px );
+
+        }
+        25% {
+
+            transform: translate( -1px, -1px );
+
+        }
+        50% {
+
+            transform: translate( 1px, 1px );
+
+        }
+        75% {
+
+            transform: translate( 1px, -1px );
+
+        }
+        100% {
+
+            transform: translate( -1px, 1px );
+
+        }
+
+    }
+
+}

@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - core-js
+  - ejs
+  - es5-ext
+  - node
+  - puppeteer
+  - yorkie

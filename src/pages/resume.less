@@ -1,0 +1,52 @@
+.page-wrapper {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background: #ccc;
+
+    // stylelint-disable-next-line
+    -webkit-print-color-adjust: exact;
+    // stylelint-disable-next-line
+    print-color-adjust: exact;
+
+    .page-inner,
+    .resume {
+
+        width: 100%;
+
+        overflow: hidden;
+
+    }
+
+    .resume {
+
+        position: relative;
+
+    }
+
+    .page {
+
+        position: relative;
+        display: block;
+
+        width: 100%;
+        overflow: hidden;
+        background: #fff;
+
+        // stylelint-disable-next-line
+        page-break-before: auto;
+        // stylelint-disable-next-line
+        page-break-after: auto;
+
+        @media screen and ( min-width: 800px ), print {
+
+            width: 21cm;
+
+        }
+
+    }
+
+}
