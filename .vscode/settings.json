@@ -141,6 +141,7 @@
         ".nuxt.uat": "nuxt",
         ".nuxt.production": "nuxt",
         "resume": "job",
+        "resumes": "job",
         ".output": "dist",
         ".reports": "dist",
         ".snapshots": "dist",

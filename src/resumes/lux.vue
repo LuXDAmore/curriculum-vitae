@@ -25,9 +25,9 @@
                     v-html="coverLetter"
                 />
 
-                <span class="page-break" />
-
             </div>
+
+            <span class="page-break" />
 
         </template>
 
