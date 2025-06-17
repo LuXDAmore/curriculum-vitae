@@ -34,7 +34,7 @@ const devMiddleware = require('webpack-dev-middleware')(compiler, {
 })
 
 const hotMiddleware = require('webpack-hot-middleware')(compiler, {
-    log: () => { },
+    log: () => {},
     heartbeat: 2000
 })
 // force page reload when html-webpack-plugin template changes
@@ -80,7 +80,7 @@ console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
     console.log('> Listening at ' + uri + '\n')
     // when env is testing, don't need open it
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'testing' && process.env.NODE_ENV !== 'production') {
         opn(uri)
     }
     _resolve()
