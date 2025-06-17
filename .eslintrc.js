@@ -492,4 +492,13 @@ module.exports = {
             }
         ],
     },
+    overrides: [
+        {
+            // Javascript
+            files: [ '*.js', '*.ts' ],
+            rules: {
+                indent: [ 'warn', 4 ],
+            },
+        },
+    ],
 };

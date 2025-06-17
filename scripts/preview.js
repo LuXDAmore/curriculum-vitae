@@ -1,108 +1,108 @@
 const path = require(
-    'path',
-)
- , fs = require(
-    'fs',
-)
- , mv = require(
-    'mv',
-);
+        'path',
+    )
+    , fs = require(
+        'fs',
+    )
+    , mv = require(
+        'mv',
+    );
 const PDFImage = require(
-    'pdf-image',
-).PDFImage
+        'pdf-image',
+    ).PDFImage
 
 
- , getDirectories = () => {
+    , getDirectories = () => {
 
-    const srcpath = path.join(
- __dirname,
-'../pdf',
-);
-
-    return fs.readdirSync(
-srcpath,
-);
-
-}
-
- , getTemplateName = PDF => {
-
-    return PDF.replace(
-'.pdf',
-'',
-);
-
-}
-
- , convert = async PDF => {
-
-    const pdfImage = new PDFImage(
-        path.join(
+        const srcpath = path.join(
             __dirname,
-'../pdf/' + PDF,
-        ),
-    );
+            '../pdf',
+        );
 
-    await pdfImage.convertPage(
-        0,
-    );
+        return fs.readdirSync(
+            srcpath,
+        );
 
-}
+    }
 
- , directories = getDirectories();
+    , getTemplateName = PDF => {
+
+        return PDF.replace(
+            '.pdf',
+            '',
+        );
+
+    }
+
+    , convert = async PDF => {
+
+        const pdfImage = new PDFImage(
+            path.join(
+                __dirname,
+                '../pdf/' + PDF,
+            ),
+        );
+
+        await pdfImage.convertPage(
+            0,
+        );
+
+    }
+
+    , directories = getDirectories();
 
 directories.forEach(
- async dir => {
+    async dir => {
 
-    try {
+        try {
 
-        await convert(
-dir,
-);
+            await convert(
+                dir,
+            );
 
-} catch( e ) {
-
-        // eslint-disable-next-line
-        console.dir(
-e,
-);
-
-}
-const source = path.join(
- __dirname,
-'../pdf/' + getTemplateName(
- dir,
-) + '-0.png',
-)
-     , output = path.join(
-__dirname,
-'../src/assets/preview/resume-' + getTemplateName(
-dir,
-) + '.png',
-);
-
-    // eslint-disable-next-line
-    console.log(
-output,
-);
-    mv(
- source,
-output,
-function(
- err,
-) {
-
-        if( err ) {
+        } catch( e ) {
 
             // eslint-disable-next-line
+        console.dir(
+                e,
+            );
+
+        }
+        const source = path.join(
+                __dirname,
+                '../pdf/' + getTemplateName(
+                    dir,
+                ) + '-0.png',
+            )
+            , output = path.join(
+                __dirname,
+                '../src/assets/preview/resume-' + getTemplateName(
+                    dir,
+                ) + '.png',
+            );
+
+        // eslint-disable-next-line
+    console.log(
+            output,
+        );
+        mv(
+            source,
+            output,
+            function(
+                err,
+            ) {
+
+                if( err ) {
+
+                    // eslint-disable-next-line
  console.dir(
-err,
-);
+                        err,
+                    );
 
-}
+                }
 
-},
-);
+            },
+        );
 
-},
+    },
 );

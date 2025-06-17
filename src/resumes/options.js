@@ -7,7 +7,7 @@ const person = require(
         `../../resume/${ person.cover.letter }`
     )
     // Called by templates to decrease redundancy
-  , mixin = {
+    , mixin = {
         data: () => (
             {
                 person,

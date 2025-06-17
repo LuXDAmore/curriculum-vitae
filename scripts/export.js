@@ -27,78 +27,78 @@ const fs = require(
 
 const fetchResponse = () => {
 
-    // eslint-disable-next-line compat/compat
-    return new Promise(
-        (
-            resolve,
-            reject,
-        ) => {
+        // eslint-disable-next-line compat/compat
+        return new Promise(
+            (
+                resolve,
+                reject,
+            ) => {
 
-            try {
+                try {
 
-                const req = http.request(
-                    `http://localhost:${ config.dev.port }/#/`,
-                    response => resolve(
-                        response.statusCode,
-                    ),
-                );
+                    const req = http.request(
+                        `http://localhost:${ config.dev.port }/#/`,
+                        response => resolve(
+                            response.statusCode,
+                        ),
+                    );
 
-                req.on(
-                    'error',
-                    err => reject(
-                        err,
-                    ),
-                );
-
-                req.end();
-
-            } catch( err ) {
-
-                reject(
-                    err,
-                );
-
-            }
-
-        },
-    );
-
-}
-
- , waitForServerReachable = () => {
-
-    return interval(
-        1000,
-    )
-    .pipe(
-        mergeMap(
-            async() => {
-
-                    try {
-
-                        const statusCode = await fetchResponse();
-
-                        if( statusCode === 200 ) return true;
-
-                    } catch( err ) {
-
-                        // eslint-disable-next-line
-                        console.log(
+                    req.on(
+                        'error',
+                        err => reject(
                             err,
-                        );
+                        ),
+                    );
 
-                    }
-                    return false;
+                    req.end();
+
+                } catch( err ) {
+
+                    reject(
+                        err,
+                    );
+
+                }
 
             },
-        ),
-        filter(
-            ok => !! ok,
-        ),
-    );
+        );
 
-}
- , convert = async() => {
+    }
+
+    , waitForServerReachable = () => {
+
+        return interval(
+            1000,
+        )
+            .pipe(
+                mergeMap(
+                    async() => {
+
+                        try {
+
+                            const statusCode = await fetchResponse();
+
+                            if( statusCode === 200 ) return true;
+
+                        } catch( err ) {
+
+                            // eslint-disable-next-line
+                        console.log(
+                                err,
+                            );
+
+                        }
+                        return false;
+
+                    },
+                ),
+                filter(
+                    ok => !! ok,
+                ),
+            );
+
+    }
+    , convert = async() => {
 
         await waitForServerReachable()
             .pipe(
@@ -170,41 +170,41 @@ const fetchResponse = () => {
     }
     , getResumesFromDirectories = () => {
 
-    const directories = getDirectories();
+        const directories = getDirectories();
 
-    return directories
-    .map(
- dir => {
+        return directories
+            .map(
+                dir => {
 
-        const fileName = dir.replace(
- '.vue',
-'',
-);
+                    const fileName = dir.replace(
+                        '.vue',
+                        '',
+                    );
 
-        return {
-            path: fileName,
-            name: fileName,
-        };
+                    return {
+                        path: fileName,
+                        name: fileName,
+                    };
 
-},
-);
+                },
+            );
 
-}
+    }
 
- , getDirectories = () => {
+    , getDirectories = () => {
 
-    const srcpath = path.join(
-__dirname,
-'../src/resumes',
-);
+        const srcpath = path.join(
+            __dirname,
+            '../src/resumes',
+        );
 
-    return fs.readdirSync(
- srcpath,
-)
-    .filter(
-file => file !== 'resumes.js' && file !== 'template.vue' && file !== 'options.js',
-);
+        return fs.readdirSync(
+            srcpath,
+        )
+            .filter(
+                file => file !== 'resumes.js' && file !== 'template.vue' && file !== 'options.js',
+            );
 
-};
+    };
 
 convert();
