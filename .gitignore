@@ -83,5 +83,8 @@ apps/**/.env
 .cursor/mcp.json
 .vscode/mcp.json
 
+# FTP
+.vscode/sftp.json
+
 
 *.tsbuildinfo
