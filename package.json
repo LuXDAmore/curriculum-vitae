@@ -129,7 +129,7 @@
         "rimraf": "^3.0.2",
         "rxjs": "^6.6.7",
         "semver": "^7.7.2",
-        "shelljs": "^0.8.5",
+        "shelljs": "^0.10.0",
         "stylelint": "^13.13.1",
         "stylelint-config-rational-order": "^0.1.2",
         "stylelint-config-standard": "^20.0.0",
