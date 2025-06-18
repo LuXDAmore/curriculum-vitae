@@ -300,7 +300,7 @@
                                 rel="noopener"
                                 target="_blank"
                                 class="section-content__item"
-                                @click.native="! education.website && $event.preventDefault()"
+                                @click="! education.website && $event.preventDefault()"
                             >
                                 <h4
                                     v-if="education.school"
@@ -355,7 +355,7 @@
                                 rel="noopener"
                                 target="_blank"
                                 class="section-content__item"
-                                @click.native="! speak.website && $event.preventDefault()"
+                                @click="! speak.website && $event.preventDefault()"
                             >
                                 <h4
                                     v-if="speak.name"
@@ -399,7 +399,7 @@
                                 rel="noopener"
                                 target="_blank"
                                 class="section-content__item"
-                                @click.native="! cert.website && $event.preventDefault()"
+                                @click="! cert.website && $event.preventDefault()"
                             >
                                 <h4
                                     v-if="cert.name"
@@ -495,7 +495,7 @@
                                             class="section-content__link"
                                             target="_blank"
                                             rel="noopener"
-                                            @click.native="! experience.website && $event.preventDefault()"
+                                            @click="! experience.website && $event.preventDefault()"
                                             v-text="experience.company"
                                         />
                                     </h4>
@@ -564,7 +564,7 @@
                                 class="section-content__item"
                                 rel="noopener"
                                 target="_blank"
-                                @click.native="! project.url && $event.preventDefault()"
+                                @click="! project.url && $event.preventDefault()"
                             >
 
                                 <div
@@ -624,7 +624,7 @@
                             target="_blank"
                             rel="noopener"
                             class="section-content__item"
-                            @click.native="! repo.url && $event.preventDefault()"
+                            @click="! repo.url && $event.preventDefault()"
                         >
                             <h4
                                 v-if="repo.name"
@@ -668,7 +668,7 @@
                                     target="_blank"
                                     rel="noopener"
                                     class="section-content__item no--margins"
-                                    @click.native="! contribution.url && $event.preventDefault()"
+                                    @click="! contribution.url && $event.preventDefault()"
                                 >
                                     <div class="section-content__header">
 

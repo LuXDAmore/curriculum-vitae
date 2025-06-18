@@ -129,25 +129,33 @@ const fetchResponse = () => {
                             },
                         )
                         , page = await browser.newPage()
+                        , languages = [
+                            'it',
+                            'en',
+                        ]
                     ;
 
-                    await page.goto(
-                        `http://localhost:${ config.dev.port }/#/resume/${ dir.name }?pdf=1`,
-                        {
-                            waitUntil: 'networkidle2',
-                        },
-                    );
+                    for await( const lang of languages ) {
 
-                    await page.pdf(
-                        {
-                            path: path.join(
-                                __dirname,
-                                `../pdf/${ dir.name }.pdf`,
-                            ),
-                            format: 'A4',
-                            printBackground: true,
-                        },
-                    );
+                        await page.goto(
+                            `http://localhost:${ config.dev.port }/#/resume/${ dir.name }?pdf=1${ lang !== 'en' ? `&lang=${ lang }` : '' }`,
+                            {
+                                waitUntil: 'networkidle2',
+                            },
+                        );
+
+                        await page.pdf(
+                            {
+                                path: path.join(
+                                    __dirname,
+                                    `../pdf/${ dir.name }${ lang !== 'en' ? `-${ lang }` : '' }.pdf`,
+                                ),
+                                format: 'A4',
+                                printBackground: true,
+                            },
+                        );
+
+                    }
 
                     await browser.close();
 
