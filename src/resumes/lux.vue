@@ -273,7 +273,125 @@
 
             </div>
 
-            <span class="page-break" />
+        </aside>
+
+        <main class="right-column">
+
+            <div class="page-inside">
+
+                <section
+                    v-if="skillsSortedByLevel"
+                    class="skills-section section"
+                >
+
+                    <div class="icon">
+                        <i class="material-icons">done_all</i>
+                        <h2
+                            v-if="lang.skills"
+                            class="section-headline"
+                            v-text="lang.skills"
+                        />
+                    </div>
+
+                    <div class="section-content-grid section-content-grid--no-padding out-of-margins">
+                        <small
+                            v-for="( skill, index ) in skillsSortedByLevel"
+                            :key="index"
+                            class="grid-item"
+                        >
+
+                            <i v-if="skill.iconClass" :class="`lang-icon ${ skill.iconClass }`" />
+
+                            <h5
+                                v-else-if="skill.name"
+                                :class="{
+                                    'squarred-grid-item--small': skill.level < 70,
+                                    'squarred-grid-item--medium': skill.level >= 70,
+                                    'squarred-grid-item--bigger': skill.level >= 90,
+                                }"
+                                class="squarred-grid-item"
+                            >
+                                <span class="squarred-grid-item-name" v-text="skill.name" />
+                                <span class="squarred-grid-item-level" v-text="`${ skill.level }%`" />
+                            </h5>
+
+                        </small>
+                    </div>
+
+                </section>
+
+                <section v-if="person.experience.length" class="experience-section section">
+
+                    <div class="icon">
+                        <i class="material-icons small-icon">work</i>
+                        <h2
+                            v-if="lang.experience"
+                            class="section-headline"
+                            v-text="lang.experience"
+                        />
+                    </div>
+
+                    <div class="section-content">
+                        <div
+                            v-for="( experience, index ) in person.experience"
+                            :key="index"
+                            class="section-content__item"
+                        >
+                            <div class="section-content__link">
+                                <div class="section-content__subheader">
+
+                                    <h4 v-if="experience.company">
+                                        <a
+                                            :href="experience.website || '#'"
+                                            :title="experience.company"
+                                            class="section-content__link"
+                                            target="_blank"
+                                            rel="noopener"
+                                            @click="! experience.website && $event.preventDefault()"
+                                            v-text="experience.company"
+                                        />
+                                    </h4>
+
+                                    <small v-if="experience.note" class="section-content__text--light experience__note">
+                                        <span
+                                            v-if="experience.preNote"
+                                            class="experience__note experience__note__pre"
+                                            v-html="experience.preNote"
+                                        />
+                                        <em v-text="experience.note" />
+                                    </small>
+
+                                </div>
+
+                                <h5
+                                    v-if="experience.position"
+                                    class="section-content__header"
+                                    v-text="experience.position"
+                                />
+
+                                <small
+                                    v-if="experience.description"
+                                    class="section-content__text"
+                                    v-html="experience.description"
+                                />
+
+                                <small  v-if="experience.timeperiod" class="section-content__text--light">
+                                    <em v-text="experience.timeperiod" />
+                                </small>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+        <span class="page-break" />
+
+        <aside class="left-column">
 
             <div class="page-inside page--next">
 
@@ -424,118 +542,6 @@
         </aside>
 
         <main class="right-column">
-
-            <div class="page-inside">
-
-                <section
-                    v-if="skillsSortedByLevel"
-                    class="skills-section section"
-                >
-
-                    <div class="icon">
-                        <i class="material-icons">done_all</i>
-                        <h2
-                            v-if="lang.skills"
-                            class="section-headline"
-                            v-text="lang.skills"
-                        />
-                    </div>
-
-                    <div class="section-content-grid section-content-grid--no-padding out-of-margins">
-                        <small
-                            v-for="( skill, index ) in skillsSortedByLevel"
-                            :key="index"
-                            class="grid-item"
-                        >
-
-                            <i v-if="skill.iconClass" :class="`lang-icon ${ skill.iconClass }`" />
-
-                            <h5
-                                v-else-if="skill.name"
-                                :class="{
-                                    'squarred-grid-item--small': skill.level < 70,
-                                    'squarred-grid-item--medium': skill.level >= 70,
-                                    'squarred-grid-item--bigger': skill.level >= 90,
-                                }"
-                                class="squarred-grid-item"
-                            >
-                                <span class="squarred-grid-item-name" v-text="skill.name" />
-                                <span class="squarred-grid-item-level" v-text="`${ skill.level }%`" />
-                            </h5>
-
-                        </small>
-                    </div>
-
-                </section>
-
-                <section v-if="person.experience.length" class="experience-section section">
-
-                    <div class="icon">
-                        <i class="material-icons small-icon">work</i>
-                        <h2
-                            v-if="lang.experience"
-                            class="section-headline"
-                            v-text="lang.experience"
-                        />
-                    </div>
-
-                    <div class="section-content">
-                        <div
-                            v-for="( experience, index ) in person.experience"
-                            :key="index"
-                            class="section-content__item"
-                        >
-                            <div class="section-content__link">
-                                <div class="section-content__subheader">
-
-                                    <h4 v-if="experience.company">
-                                        <a
-                                            :href="experience.website || '#'"
-                                            :title="experience.company"
-                                            class="section-content__link"
-                                            target="_blank"
-                                            rel="noopener"
-                                            @click="! experience.website && $event.preventDefault()"
-                                            v-text="experience.company"
-                                        />
-                                    </h4>
-
-                                    <small v-if="experience.note" class="section-content__text--light experience__note">
-                                        <span
-                                            v-if="experience.preNote"
-                                            class="experience__note experience__note__pre"
-                                            v-html="experience.preNote"
-                                        />
-                                        <em v-text="experience.note" />
-                                    </small>
-
-                                </div>
-
-                                <h5
-                                    v-if="experience.position"
-                                    class="section-content__header"
-                                    v-text="experience.position"
-                                />
-
-                                <small
-                                    v-if="experience.description"
-                                    class="section-content__text"
-                                    v-html="experience.description"
-                                />
-
-                                <small  v-if="experience.timeperiod" class="section-content__text--light">
-                                    <em v-text="experience.timeperiod" />
-                                </small>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-            </div>
-
-            <span class="page-break" />
 
             <div class="page-inside page--next">
 

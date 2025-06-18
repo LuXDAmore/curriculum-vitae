@@ -15,12 +15,19 @@
                             Luca Iaconelli
                         </router-link>
                     </h1>
+                    <p>
+                        With 15+ years in frontend development, I specialize in building high-performance applications using Vue.js and Nuxt.js.
+                        As an official Nuxt.js contributor and Vue conference speaker, I combine technical expertise with a passion for
+                        open-source and mentoring. Available for remote contract work worldwide.<br>
+                        <strong>I am Graduated and Certified by <mark><em class="google">Google</em></mark> (by Udacity Scholarship).</strong>
+                    </p>
+                    <br>
                     <h2>
                         Web developer, web engineering, front-end developer, full stack developer, back-end developer, creative coder, creative technologist
                     </h2>
+                    <br>
                     <h3>
-                        Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access.<br>
-                        I graduated from Udacity as a Google mobile web specialist.
+                        Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access.
                     </h3>
                 </div>
                 <div>

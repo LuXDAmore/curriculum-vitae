@@ -1,17 +1,10 @@
 import { terms } from '../terms';
 
-const person = require(
-        `../../resume/data.${ process.env.LANGUAGE }.json`
-    )
-    , coverLetter = person && person.cover && person.cover.letter && require(
-        `../../resume/${ person.cover.letter }`
-    )
+const
     // Called by templates to decrease redundancy
-    , mixin = {
+    mixin = {
         data: () => (
             {
-                person,
-                coverLetter,
                 terms,
             }
         ),
@@ -36,6 +29,25 @@ const person = require(
                 ;
 
                 return useLang;
+
+            },
+            person() {
+
+                const lang = this.$route.query.lang || process.env.LANGUAGE || 'en';
+
+                return require(
+                    `../../resume/data.${ lang }.json`
+                );
+
+            }
+            , coverLetter() {
+
+                if( ! this.person || ! this.person.cover || ! this.person.cover.letter )
+                    return;
+
+                return require(
+                    `../../resume/${ this.person.cover.letter }`
+                );
 
             },
             skillsSortedByLevel() {
