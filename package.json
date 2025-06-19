@@ -44,7 +44,7 @@
         "font-awesome": "^4.7.0",
         "material-design-icons": "^3.0.1",
         "material-icons": "^0.2.3",
-        "modern-normalize": "^0.6.0",
+        "modern-normalize": "^0.7.0",
         "vue": "^2.7.16",
         "vue-router": "^3.6.5"
     },
