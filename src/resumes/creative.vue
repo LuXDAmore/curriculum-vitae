@@ -118,7 +118,7 @@
 
                 <div class="section-content">
                     <a
-                        v-for="(experience, index) in person.experience"
+                        v-for="(experience, index) in person.experiences"
                         :key="index"
                         class="section-content__item"
                         :href="experience.website"

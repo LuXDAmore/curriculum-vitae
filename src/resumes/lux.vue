@@ -320,7 +320,7 @@
 
                 </section>
 
-                <section v-if="person.experience.length" class="experience-section section">
+                <section v-if="person.experiences.length" class="experience-section section">
 
                     <div class="icon">
                         <i class="material-icons small-icon">work</i>
@@ -333,7 +333,7 @@
 
                     <div class="section-content">
                         <div
-                            v-for="( experience, index ) in person.experience"
+                            v-for="( experience, index ) in person.experiences"
                             :key="index"
                             class="section-content__item"
                         >
@@ -563,7 +563,7 @@
 
                         <div class="section-content">
                             <a
-                                v-for="( project, index ) in person.projects"
+                                v-for="( project, index ) in person.projects.sort( ( a, b ) => ( b.year - a.year ) )"
                                 :key="index"
                                 :href="project.url || '#'"
                                 :title="project.name"
@@ -593,7 +593,7 @@
 
                                 <small
                                     v-if="project.url || project.platform"
-                                    class="section-content__subheader section-content__text--light"
+                                    class="section-content__subheader section-content__text--light section-content__platforms"
                                 >
                                     <em v-if="project.url" v-text="project.url || '#'" />
                                     <pre v-if="project.platform" v-text="project.platform" />

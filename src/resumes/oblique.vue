@@ -18,7 +18,7 @@
                 <h3>{{ lang.experience }}</h3>
 
                 <div
-                    v-for="experience in person.experience"
+                    v-for="experience in person.experiences"
                     :key="experience.company"
                     class="experience-block"
                 >
@@ -100,127 +100,178 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 #resume3 {
-  font-family:'Open Sans Condensed', sans-serif;
-  padding-bottom:50px;
-  a, a:focus, a:hover {
-    color:black;
-    text-decoration:none;
-  }
-  h3 {
-    font-weight:bold;
-    text-transform:uppercase;
-    margin-bottom:10px;
-  }
-  .resume-header .triangle {
-    width:0;
-    height:0;
-    border-style:solid;
-    border-width:600px 0 0 1500px;
-    border-color:#006064 transparent transparent transparent;
-    position:absolute;
-    left:-600px;
-    top:0;
-  }
-  .resume-header .person-header {
-    position:absolute;
-    z-index:20;
-    right:15%;
-    top:200px;
-    .person-wrapper {
-      overflow:hidden;
-      position:relative;
+
+    padding-bottom: 50px;
+    font-family: "Open Sans Condensed", sans-serif;
+    a,
+    a:focus,
+    a:hover {
+
+        color: black;
+        text-decoration: none;
+
     }
-    .img {
-      height:100%;
-      width:100px;
-      float:left;
-      position:absolute;
-      top:0;
-      right:0;
-      background:url('../../resume/id.jpg');
-      background-position:center;
-      background-size:cover;
+    h3 {
+
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+
     }
-    .person {
-      float:right;
-      color:white;
-      margin-right:120px;
+    .resume-header .triangle {
+
+        position: absolute;
+        top: 0;
+        left: -600px;
+        width: 0;
+        height: 0;
+        border-color: #006064 transparent transparent transparent;
+        border-style: solid;
+        border-width: 600px 0 0 1500px;
+
     }
-    .name {
-      text-transform:uppercase;
-      font-size:50px;
-      display:table-caption;
-      text-align:right;
-      line-height:1.0;
-      font-weight:bold;
-    }
-    .position {
-      font-size:20px;
-      display:table-caption;
-      text-align:right;
-      line-height:1.0;
-      margin-top:10px;
-    }
-  }
-  .resume-content {
-    margin-top:435px;
-    margin-left:15%;
-    width:70%;
-    .experience .experience-block {
-      line-height:1;
-      margin-bottom:10px;
-      .row:first-child {
-        font-size:20px;
-        text-transform:uppercase;
-        i {
-          font-size:17px;
+    .resume-header .person-header {
+
+        position: absolute;
+        top: 200px;
+        right: 15%;
+        z-index: 20;
+        .person-wrapper {
+
+            position: relative;
+            overflow: hidden;
+
         }
-      }
+        .img {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            float: left;
+            width: 100px;
+            height: 100%;
+            background: url( "../../resume/id.jpg" );
+            background-position: center;
+            background-size: cover;
+
+        }
+        .person {
+
+            float: right;
+            margin-right: 120px;
+            color: white;
+
+        }
+        .name {
+
+            display: table-caption;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 1;
+            text-align: right;
+            text-transform: uppercase;
+
+        }
+        .position {
+
+            display: table-caption;
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 1;
+            text-align: right;
+
+        }
+
     }
-    .experience .experience-block:first-of-type {
-      width:80%;
+    .resume-content {
+
+        width: 70%;
+        margin-top: 435px;
+        margin-left: 15%;
+        .experience .experience-block {
+
+            margin-bottom: 10px;
+            line-height: 1;
+            .row:first-child {
+
+                font-size: 20px;
+                text-transform: uppercase;
+                i {
+
+                    font-size: 17px;
+
+                }
+
+            }
+
+        }
+        .experience .experience-block:first-of-type {
+
+            width: 80%;
+
+        }
+
     }
-  }
-  .education-block {
-    line-height:1;
-    margin-bottom:10px;
-    .row:first-child {
-      font-size:20px;
-      text-transform:uppercase;
+    .education-block {
+
+        margin-bottom: 10px;
+        line-height: 1;
+        .row:first-child {
+
+            font-size: 20px;
+            text-transform: uppercase;
+
+        }
+
     }
-  }
-  .skill-section .skills {
-    width:100%;
-    .skill-block {
-      width:50%;
-      float:left;
-      i {
-        font-size:17px;
-        margin-right:15px;
-      }
-      .skill {
-        font-size:20px;
-      }
+    .skill-section .skills {
+
+        width: 100%;
+        .skill-block {
+
+            float: left;
+            width: 50%;
+            i {
+
+                margin-right: 15px;
+                font-size: 17px;
+
+            }
+            .skill {
+
+                font-size: 20px;
+
+            }
+
+        }
+
     }
-  }
-  .skills-other {
-    display:inline-block;
-    font-size:20px;
-    margin-top:10px;
-    line-height:1;
-  }
-  .contact {
-    margin-top:50px;
-    a, span {
-      display:inline-block;
-      font-size:20px;
-      list-style:none;
-      margin-top:0;
-      line-height:1;
-      float:left;
-      padding-left:0;
-      margin-left:0;
+    .skills-other {
+
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 1;
+
     }
-  }
+    .contact {
+
+        margin-top: 50px;
+        a,
+        span {
+
+            display: inline-block;
+            float: left;
+            margin-top: 0;
+            margin-left: 0;
+            padding-left: 0;
+            font-size: 20px;
+            line-height: 1;
+            list-style: none;
+
+        }
+
+    }
+
 }
 </style>

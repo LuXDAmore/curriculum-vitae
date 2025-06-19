@@ -21,7 +21,7 @@
                 <h2 id="experience-title">{{ lang.experience }}</h2>
                 <div class="spacer" />
                 <div
-                    v-for="experience in person.experience"
+                    v-for="experience in person.experiences"
                     :key="experience.company"
                     class="experience"
                 >

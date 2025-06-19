@@ -35,12 +35,25 @@
                         to="/resume/lux"
                         title="Open preview"
                         class="btn-link"
-                        data-content="👁️ Open preview 👁️"
+                        data-content="👁️ Open preview (EN) 👁️"
                         target="_self"
                         rel="noopener"
                     >
                         <span class="link-inner">
-                            👁️ Open preview 👁️
+                            👁️ Open preview (EN) 👁️
+                        </span>
+                    </router-link>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <router-link
+                        to="/resume/lux?lang=it"
+                        title="Apri anteprima"
+                        class="btn-link"
+                        data-content="👁️ Open preview (Italian) 👁️"
+                        target="_self"
+                        rel="noopener"
+                    >
+                        <span class="link-inner">
+                            👁️ Open preview (Italian)👁️
                         </span>
                     </router-link>
                 </div>
@@ -49,13 +62,27 @@
                         href="/pdf/lux.pdf"
                         class="btn-link"
                         title="Download"
-                        data-content="⬇️ Download ⬇️"
+                        data-content="⬇️ Download (EN) ⬇️"
                         target="_blank"
                         rel="noopener"
                         download
                     >
                         <span class="link-inner">
-                            ⬇️ Download ⬇️
+                            ⬇️ Download (EN) ⬇️
+                        </span>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                        href="/pdf/lux-it.pdf"
+                        class="btn-link"
+                        title="Download"
+                        data-content="⬇️ Download (Italian) ⬇️"
+                        target="_blank"
+                        rel="noopener"
+                        download
+                    >
+                        <span class="link-inner">
+                            ⬇️ Download (Italian) ⬇️
                         </span>
                     </a>
                 </div>

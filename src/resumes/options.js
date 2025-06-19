@@ -35,6 +35,10 @@ const
 
                 const lang = this.$route.query.lang || process.env.LANGUAGE || 'en';
 
+                console.info(
+                    lang 
+                );
+
                 return require(
                     `../../resume/data.${ lang }.json`
                 );

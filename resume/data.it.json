@@ -1,6 +1,6 @@
 {
     "cover": {
-        "letter": "cover-letter.en.html"
+        "letter": "cover-letter.it.html"
     },
     "name": {
         "first": "Luca",
@@ -28,7 +28,7 @@
         "skype": "lux99.."
     },
     "lang": "en, it",
-    "experience": [
+    "experiences": [
         {
             "company": "Illimity Bank",
             "position": "Mobile and web specialist",
