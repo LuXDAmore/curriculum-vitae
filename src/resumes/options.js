@@ -11,33 +11,14 @@ const
         computed: {
             lang() {
 
-                const defaultLang = this.terms.en
-                    , useLang = this.terms[ process.env.LANGUAGE ]
-                ;
+                const useTerms = this.terms[ this.$route.query.lang || process.env.LANGUAGE || 'en' ] || this.terms.en;
 
-                // overwrite non-set fields with default lang
-                Object
-                    .keys(
-                        defaultLang,
-                    )
-                    .filter(
-                        k => ! useLang[ k ],
-                    )
-                    .forEach(
-                        k => ( useLang[ k ] = defaultLang[ k ] ),
-                    )
-                ;
-
-                return useLang;
+                return useTerms;
 
             },
             person() {
 
                 const lang = this.$route.query.lang || process.env.LANGUAGE || 'en';
-
-                console.info(
-                    lang 
-                );
 
                 return require(
                     `../../resume/data.${ lang }.json`
@@ -59,12 +40,46 @@ const
                 if( ! this.person || ! this.person.skills || ! this.person.skills.length )
                     return [];
 
-                return this.person.skills.sort(
-                    (
-                        { level: a },
-                        { level: b },
-                    ) => b - a
-                );
+                return this.person.skills
+                    .sort(
+                        (
+                            { level: a },
+                            { level: b },
+                        ) => b - a
+                    )
+                    .sort(
+                        (
+                            { hot: a },
+                            { hot: b },
+                        ) => {
+
+                            if( a && ! b )
+                                return - 1;
+
+                            if( b && ! a )
+                                return 1;
+
+                            return 0;
+
+                        }
+                    )
+                    .sort(
+                        (
+                            { first: a },
+                            { first: b },
+                        ) => {
+
+                            if( a && ! b )
+                                return - 1;
+
+                            if( b && ! a )
+                                return 1;
+
+                            return 0;
+
+                        }
+                    )
+                ;
 
             },
         },

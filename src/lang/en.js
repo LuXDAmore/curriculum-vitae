@@ -3,7 +3,7 @@ const lang = {
     certifications: 'Certifications',
     qualities: 'Qualities',
     hobbies: 'Hobbies',
-    speaker: 'Talks',
+    speaker: 'Speech',
     contact: 'Contact',
     born: 'Born',
     bornIn: 'in',
@@ -12,8 +12,10 @@ const lang = {
     skills: 'Skills',
     projects: 'Projects',
     contributions: 'Contributions',
-    repo: 'Repo',
+    repo: 'Repositories',
     about: 'About me',
+    extra: 'Extra',
+    summary: 'Summary',
 };
 
 export default lang;

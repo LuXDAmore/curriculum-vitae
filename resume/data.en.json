@@ -7,9 +7,9 @@
         "middle": null,
         "last": "Iaconelli"
     },
-    "about": "With 15+ years in frontend development, I specialize in building high-performance applications using Vue.js and Nuxt.js. As an official Nuxt.js contributor and Vue conference speaker, I combine technical expertise with a passion for open-source and mentoring. Available for remote contract work worldwide. I am Graduated and Certified by Google.",
+    "about": "With 15+ years in frontend development, I specialize in building high-performance applications using VueJs and NuxtJs. <br>As an official <a href=\"https://nuxt.com/modules/prune-html\" target=\"_blank\"><strong>NuxtJs contributor</strong></a> and <a href=\"https://www.youtube.com/watch?v=4-HyGHAIOcY\" target=\"_blank\"><strong>VueJs conference speaker</strong></a>, I combine technical expertise with a passion for open-source and mentoring; <br>Available for remote contract work worldwide; <br>I am <strong>Graduated</strong> and <strong>Certified</strong> by <a href=\"https://confirm.udacity.com/LD2DHJKR\" target=\"_blank\"><strong>Google</strong></a>",
     "position": "👴🏻 Senior Frontend Developer (Vue/Nuxt Specialist)",
-    "playing": "⚡ I specialize in building high-performance applications using Vue.js and Nuxt.js.",
+    "playing": "⚡ High-performance applications using VueJs and NuxtJs",
     "birth": {
         "year": 1990,
         "month": 6,
@@ -34,8 +34,8 @@
     "experiences": [
         {
             "company": "Luca Iaconelli",
-            "position": "Freelance-Contractor",
-            "timeperiod": "July 2019 - now",
+            "position": "Freelance (contract)",
+            "timeperiod": "July 2020 - now",
             "description": "Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access",
             "website": "https://www.illimity.com",
             "skills": [
@@ -57,8 +57,8 @@
             "clients": [
                 {
                     "company": "Abilio",
-                    "position": "Front end architect specialist",
-                    "timeperiod": "July 2019 - August 2025",
+                    "position": "FrontEnd architect specialist",
+                    "timeperiod": "April 2022 - August 2025",
                     "description": "",
                     "website": "https://www.abilio.com",
                     "skills": [
@@ -70,6 +70,75 @@
                         "AWS - S3",
                         "AWS - DinamoDb",
                         "Azure DevOps",
+                        "Javascript",
+                        "NodeJs"
+                    ]
+                },
+                {
+                    "company": "DotEnv",
+                    "position": "FrontEnd architect specialist",
+                    "timeperiod": "September 2023 - April 2024",
+                    "description": "",
+                    "website": "https://www.dotenv.it",
+                    "skills": [
+                        "NuxtJs",
+                        "VueJS",
+                        "GraphQl",
+                        "AWS - Cognito",
+                        "AWS - AppSync",
+                        "AWS - S3",
+                        "AWS - DinamoDb",
+                        "Azure DevOps",
+                        "Javascript",
+                        "NodeJs"
+                    ]
+                },
+                {
+                    "company": "Cuepress",
+                    "position": "Wordpress developer",
+                    "timeperiod": "January 2023 - January 2024",
+                    "description": "The first Italian digital publishing house dedicated to the performing arts. Laboratory of ideas to build new models for publishing.",
+                    "website": "https://www.cuepress.com",
+                    "skills": [
+                        "Wordpress",
+                        "PHP",
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "jQuery"
+                    ]
+                },
+                {
+                    "company": "Regione Emilia-Romagna",
+                    "position": "FrontEnd Engineer",
+                    "timeperiod": "January 2022 - March 2022",
+                    "description": "Italian Government project modernization: Legacy system migration, Accessibility audits, Performance optimization",
+                    "website": "https://faenzacallsworld.com",
+                    "skills": [
+                        "NuxtJs",
+                        "VueJS",
+                        "Wordpress",
+                        "Azure DevOps",
+                        "Javascript",
+                        "NodeJs"
+                    ]
+                },
+                {
+                    "company": "Neprix",
+                    "position": "FrontEnd architect specialist",
+                    "timeperiod": "September 2020 - April 2022",
+                    "description": "",
+                    "website": "https://www.abilio.com",
+                    "skills": [
+                        "NuxtJs",
+                        "VueJS",
+                        "GraphQl",
+                        "AWS - Cognito",
+                        "AWS - AppSync",
+                        "AWS - S3",
+                        "AWS - DinamoDb",
+                        "Azure DevOps",
+                        "Javascript",
                         "NodeJs"
                     ]
                 }
@@ -78,7 +147,7 @@
         {
             "company": "Illimity Bank",
             "position": "Full stack developer",
-            "timeperiod": "July 2019 - now",
+            "timeperiod": "July 2019 - August 2020",
             "description": "Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access",
             "website": "https://www.illimitybank.com",
             "skills": [
@@ -89,6 +158,7 @@
                 "AWS - AppSync",
                 "AWS - S3",
                 "AWS - DinamoDb",
+                "Javascript",
                 "NodeJs"
             ]
         },
@@ -108,7 +178,8 @@
                 "Laravel",
                 "PHP",
                 "MySQL",
-                "AngularJs",
+                "Angular",
+                "Javascript",
                 "NodeJs"
             ]
         },
@@ -129,12 +200,13 @@
                 "PHP",
                 "MySQL",
                 "AngularJs",
+                "Javascript",
                 "NodeJs"
             ]
         },
         {
             "company": "IDEARTE Design",
-            "position": "Co-Founder && Front end developer",
+            "position": "Co-Founder && FrontEnd developer",
             "timeperiod": "December 2015 - July 2019",
             "description": "I've started a Digital Agency and i've worked on the planning and management about the setup of the entire company",
             "website": "https://ideartedesign.com",
@@ -143,8 +215,10 @@
                 "VueJS",
                 "Wordpress",
                 "PHP",
+                "Laravel",
                 "MySQL",
                 "Apache",
+                "Javascript",
                 "NodeJs"
             ]
         },
@@ -155,17 +229,32 @@
             "description": "Design and development of many e-commerce, e-learning platforms, landing pages and custom plug-ins on the WordPress platform plus the development of mobile applications",
             "website": "https://www.sedweb.it",
             "skills": [
-                ""
+                "AngularJs",
+                "Angular",
+                "Wordpress",
+                "PHP",
+                "MySQL",
+                "Ionic",
+                "Cordoba",
+                "Apache",
+                "Javascript",
+                "NodeJs"
             ]
         },
         {
             "company": "Beta Formazione",
-            "position": "Front end developer",
+            "position": "FrontEnd developer",
             "timeperiod": "December 2013 - December 2014",
             "description": "Design and development of many e-commerce and e-learning platforms",
             "website": "https://www.betaformazione.com",
             "skills": [
-                ""
+                "HTML",
+                "CSS",
+                "AngularJs",
+                "Wordpress",
+                "Javascript",
+                "PHP",
+                "MySQL"
             ]
         },
         {
@@ -175,7 +264,11 @@
             "timeperiod": "March 2014 - August 2014",
             "website": "https://www.telegraph.co.uk/finance/businessclub/business-club-video/technology-sector-videos/10689382/your-3-minutes.html",
             "skills": [
-                ""
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "MySQL"
             ]
         },
         {
@@ -184,7 +277,11 @@
             "description": "Teacher helping students learn how to be a developer",
             "timeperiod": "May 2011 - August 2014",
             "skills": [
-                ""
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "MySQL"
             ]
         },
         {
@@ -194,10 +291,10 @@
             "timeperiod": "July 2009 - December 2013",
             "website": "https://www.gemos.it",
             "skills": [
-                "Wordpress",
                 "Javascript",
                 "HTML",
                 "CSS",
+                "PHP",
                 "jQuery"
             ]
         }
@@ -230,29 +327,44 @@
             "website": "https://confirm.udacity.com/LD2DHJKR"
         },
         {
-            "degree": "I.T.I.S. - Information Technology Abacus",
+            "degree": "Information Technology Abacus",
             "timeperiod": "September 2005 - July 2009",
             "description": "Higher institute of IT, Math and Statistics",
             "website": "https://itisravenna.edu.it/"
         },
         {
             "degree": "Extra-courses",
-            "is-extra": true,
+            "extra": true,
             "description": "Philosophy, Math, German, Photography, Microsoft Office, Computer security"
         }
     ],
     "skills": [
+        {
+            "name": "NuxtJs",
+            "hot": true,
+            "first": true,
+            "level": 99
+        },
+        {
+            "name": "VueJs",
+            "hot": true,
+            "first": true,
+            "level": 99
+        },
+        {
+            "name": "WordPress",
+            "hot": true,
+            "first": true,
+            "level": 90
+        },
         {
             "name": "jQuery",
             "level": 99
         },
         {
             "name": "CSS",
+            "hot": true,
             "level": 99
-        },
-        {
-            "name": "WordPress",
-            "level": 90
         },
         {
             "name": "ReactJs",
@@ -262,17 +374,11 @@
             "name": "NoSQL",
             "level": 54
         },
-        {
-            "name": "VueJs",
-            "level": 99
-        },
+
         {
             "name": "MySQL",
+            "hot": true,
             "level": 70
-        },
-        {
-            "name": "NuxtJs",
-            "level": 99
         },
         {
             "name": "W3C",
@@ -280,6 +386,7 @@
         },
         {
             "name": "HTML",
+            "hot": true,
             "level": 92
         },
         {
@@ -288,10 +395,12 @@
         },
         {
             "name": "Performance",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Ionic",
+            "hot": true,
             "level": 81
         },
         {
@@ -316,22 +425,27 @@
         },
         {
             "name": "NodeJs",
+            "hot": true,
             "level": 92
         },
         {
             "name": "Git",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Accessibility",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Unit test",
+            "hot": true,
             "level": 81
         },
         {
             "name": "E2E",
+            "hot": true,
             "level": 69
         },
         {
@@ -352,22 +466,27 @@
         },
         {
             "name": "Vite",
+            "hot": true,
             "level": 80
         },
         {
             "name": "PHP",
+            "hot": true,
             "level": 80
         },
         {
             "name": "Laravel",
+            "hot": true,
             "level": 63
         },
         {
             "name": "Javascript",
+            "hot": true,
             "level": 99
         },
         {
             "name": "SASS",
+            "hot": true,
             "level": 99
         },
         {
@@ -384,14 +503,17 @@
         },
         {
             "name": "TypeScript",
+            "hot": true,
             "level": 80
         },
         {
             "name": "Agile",
+            "hot": true,
             "level": 81
         },
         {
             "name": "Angular",
+            "hot": true,
             "level": 90
         },
         {
@@ -436,10 +558,12 @@
         },
         {
             "name": "Vitest",
+            "hot": true,
             "level": 72
         },
         {
             "name": "Playwright",
+            "hot": true,
             "level": 72
         },
         {
@@ -502,7 +626,7 @@
             "name": "Aperitivus",
             "platform": "AngularJs, PHP, Wordpress",
             "year": 2016,
-            "description": "Project winner of the first Ravenna's italian-hackathon",
+            "description": "Winner of 1st Italian Hackathon (Ravenna)",
             "url": "https://www.comune.ra.it/stampa-e-comunicazione/comunicati/archivio-comunicati-dellufficio-stampa/2016-2/hackathon-ravenna-ecco-le-idee-premiate-assessore-costantini-creativita-e-innovazione-in-tutta-larea-grazie-agli-eventi-di-palazzo-rasponi"
         },
         {
@@ -529,7 +653,7 @@
     ],
     "hobbies": [
         {
-            "name": "Photography",
+            "name": "Photography and post-production",
             "iconClass": "emoji-icons",
             "iconText": "📸",
             "url": "https://instagram.com/luxdamore"
@@ -540,11 +664,16 @@
             "iconText": "📹",
             "url": "https://instagram.com/luxdamore"
         },
-        {
-            "name": "Coding",
+         {
+            "name": "Open-Source Development",
             "iconClass": "emoji-icons",
             "iconText": "💻",
             "url": "https://github.com/luxdamore"
+        },
+        {
+            "name": "Public Speaking",
+            "iconClass": "emoji-icons",
+            "iconText": "🎤"
         },
         {
             "name": "Playing guitar",
@@ -567,24 +696,44 @@
             "name": "Passionate and supportive",
             "iconClass": "emoji-icons",
             "iconText": "👂"
+        },
+        {
+            "name": "Curious learner",
+            "iconClass": "emoji-icons",
+            "iconText": "⏺️"
+        },
+        {
+            "name": "Performance Optimization",
+            "iconClass": "emoji-icons",
+            "iconText": "⚡"
+        },
+        {
+            "name": "Accessibility Advocacy",
+            "iconClass": "emoji-icons",
+            "iconText": "♿"
+        },
+        {
+            "name": "Mentoring",
+            "iconClass": "emoji-icons",
+            "iconText": "🧑‍🏫"
         }
     ],
     "repo": [
         {
             "name": "🎨 vue-css-doodle",
-            "description": "css-doodle, a web component for drawing patterns with CSS",
+            "description": "Web component for CSS-generated patterns",
             "url": "https://luxdamore.github.io/vue-css-doodle",
             "printUrl": false
         },
         {
             "name": "🖱️ vue-cursor-fx",
-            "description": "An animated cursor effect for interactive elements",
+            "description": "Interactive cursor effects for VueJs",
             "url": "https://luxdamore.github.io/vue-cursor-fx",
             "printUrl": false
         },
         {
             "name": "📷 vue-fake3d-image-effect",
-            "description": "A fake 3D image effect made with WebGL",
+            "description": "WebGL-based 3D image effects",
             "url": "https://luxdamore.github.io/vue-fake3d-image-effect",
             "printUrl": false
         },
@@ -616,17 +765,17 @@
     "contributions": [
         {
             "name": "🚀 nuxt",
-            "description": "Meta-framework for universal applications SSR for Vue",
+            "description": "Meta-framework for universal applications SSR for VueJS",
             "url": "https://nuxtjs.org"
         },
         {
             "name": "🧭 vue-router",
-            "description": "Navigation framework for Vue",
+            "description": "Navigation framework for VueJS",
             "url": "https://router.vuejs.org/"
         },
         {
             "name": "👔 vue-instantsearch",
-            "description": "Realtime search engine technology for Vue",
+            "description": "Realtime search engine technology for VueJS",
             "url": "https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/"
         },
         {

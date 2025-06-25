@@ -58,14 +58,6 @@ body,
         letter-spacing: normal;
         transition: all .3s cubic-bezier( .175, .885, .32, 1.275 );
 
-        &:hover,
-        &:active,
-        &:focus {
-
-            letter-spacing: .45px;
-
-        }
-
     }
 
     mark {
@@ -94,6 +86,7 @@ body,
 
     h4 {
 
+        font-size: 1rem;
         display: flex;
         flex: 1 1 100%;
         flex-direction: row;
@@ -165,12 +158,12 @@ body,
         display: block;
         height: 0;
 
-        break-after: page;
+        // stylelint-disable-next-line
+        page-break-before: auto;
+        // stylelint-disable-next-line
+        page-break-after: auto;
 
-        /* stylelint-disable-next-line */
-        page-break-after: always;
-        /* stylelint-disable-next-line */
-        page-break-before: always;
+        break-after: page;
 
     }
 
