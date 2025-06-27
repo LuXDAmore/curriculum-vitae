@@ -100,6 +100,9 @@
                     </section>
 
                     <section v-if="person.contact" class="social-container">
+
+                        <hr class="out-of-margins">
+
                         <small>
 
                             <h3
@@ -228,13 +231,22 @@
                                             <a
                                                 :href="experience.website || '#'"
                                                 :title="experience.company"
-                                                class="section-content__link"
                                                 target="_blank"
                                                 rel="noopener"
                                                 @click="! experience.website && $event.preventDefault()"
                                                 v-text="experience.company"
                                             />
                                         </h4>
+
+                                        <h5
+                                            v-if="experience.position"
+                                            class="section-content__header"
+                                            v-text="`(${ experience.position })`"
+                                        />
+
+                                        <small  v-if="experience.timeperiod" class="section-content__text--light">
+                                            <em v-text="experience.timeperiod" />
+                                        </small>
 
                                         <small v-if="experience.note" class="section-content__text--light experience__note">
                                             <span
@@ -247,69 +259,79 @@
 
                                     </div>
 
-                                    <h5
-                                        v-if="experience.position"
-                                        class="section-content__header"
-                                        v-text="experience.position"
-                                    />
-
                                     <small
                                         v-if="experience.description"
                                         class="section-content__text"
                                         v-html="experience.description"
                                     />
 
-                                    <small  v-if="experience.timeperiod" class="section-content__text--light">
-                                        <em v-text="experience.timeperiod" />
-                                    </small>
+                                    <div v-if="experience.skills" class="section-content-grid section-content-grid--no-padding out-of-margins">
+                                        <small
+                                            v-for="skill in experience.skills.sort()"
+                                            :key="skill"
+                                            class="grid-item"
+                                            v-text="skill"
+                                        />
+                                    </div>
 
                                 </div>
-                                <div v-if="experience.clients" class="section-content__link-clients-container">
-                                    <div
-                                        v-for="( experienceClient, indexJ ) in experience.clients"
-                                        :key="indexJ"
-                                        class="section-content__link"
-                                    >
-                                        <div class="section-content__subheader">
+                                <div v-if="experience.clients" class="experience-section">
+                                    <div class="section-content section-content__link-clients-container">
+                                        <div
+                                            v-for="( experienceClient, indexJ ) in experience.clients"
+                                            :key="indexJ"
+                                            class="section-content__link"
+                                        >
+                                            <div class="section-content__subheader">
 
-                                            <h4 v-if="experienceClient.company">
-                                                <a
-                                                    :href="experienceClient.website || '#'"
-                                                    :title="experienceClient.company"
-                                                    class="section-content__link"
-                                                    target="_blank"
-                                                    rel="noopener"
-                                                    @click="! experienceClient.website && $event.preventDefault()"
-                                                    v-text="experienceClient.company"
-                                                />
-                                            </h4>
+                                                <h4 v-if="experienceClient.company">
+                                                    <a
+                                                        :href="experienceClient.website || '#'"
+                                                        :title="experienceClient.company"
+                                                        target="_blank"
+                                                        rel="noopener"
+                                                        @click="! experienceClient.website && $event.preventDefault()"
+                                                        v-text="experienceClient.company"
+                                                    />
+                                                </h4>
 
-                                            <small v-if="experienceClient.note" class="section-content__text--light experience__note">
-                                                <span
-                                                    v-if="experienceClient.preNote"
-                                                    class="experience__note experience__note__pre"
-                                                    v-html="experienceClient.preNote"
+                                                <h5
+                                                    v-if="experienceClient.position"
+                                                    class="section-content__header"
+                                                    v-text="`(${ experienceClient.position })`"
                                                 />
-                                                <em v-text="experienceClient.note" />
-                                            </small>
+
+                                                <small v-if="experienceClient.note" class="section-content__text--light experience__note">
+                                                    <span
+                                                        v-if="experienceClient.preNote"
+                                                        class="experience__note experience__note__pre"
+                                                        v-html="experienceClient.preNote"
+                                                    />
+                                                    <em v-text="experienceClient.note" />
+                                                </small>
+
+                                                <small  v-if="experienceClient.timeperiod" class="section-content__text--light">
+                                                    <em v-text="experienceClient.timeperiod" />
+                                                </small>
+
+                                            </div>
+
+                                            <small
+                                                v-if="experienceClient.description"
+                                                class="section-content__text"
+                                                v-html="experienceClient.description"
+                                            />
+
+                                            <div v-if="experienceClient.skills" class="section-content-grid section-content-grid--no-padding out-of-margins">
+                                                <small
+                                                    v-for="skill in experienceClient.skills.sort()"
+                                                    :key="skill"
+                                                    class="grid-item"
+                                                    v-text="skill"
+                                                />
+                                            </div>
 
                                         </div>
-
-                                        <h5
-                                            v-if="experienceClient.position"
-                                            class="section-content__header"
-                                            v-text="experienceClient.position"
-                                        />
-
-                                        <small
-                                            v-if="experienceClient.description"
-                                            class="section-content__text"
-                                            v-html="experienceClient.description"
-                                        />
-
-                                        <small  v-if="experienceClient.timeperiod" class="section-content__text--light">
-                                            <em v-text="experienceClient.timeperiod" />
-                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -330,105 +352,6 @@
 
                 <div class="page-inside page--next">
 
-                    <template v-if="person.education.length">
-
-                        <section class="education-section section section--without-common-styles">
-
-                            <div class="icon">
-                                <i class="material-icons">school</i>
-                                <h2
-                                    v-if="lang.education"
-                                    class="section-headline"
-                                    v-text="lang.education"
-                                />
-                            </div>
-
-                            <div class="section-content section-content--no-inset">
-
-                                <a
-                                    v-for="( education, index ) in person.education"
-                                    :key="index"
-                                    :href="education.website || '#'"
-                                    :title="education.school"
-                                    rel="noopener"
-                                    target="_blank"
-                                    class="section-content__item"
-                                    @click="! education.website && $event.preventDefault()"
-                                >
-                                    <br v-if="education.extra">
-                                    <h4
-                                        v-if="education.school"
-                                        class="section-content__header"
-                                        v-text="education.school"
-                                    />
-                                    <h4
-                                        v-else-if="education.degree"
-                                        class="section-content__subheader"
-                                        v-text="education.degree"
-                                    />
-                                    <span
-                                        v-if="education.description"
-                                        class="section-content__text--light"
-                                        v-text="education.description"
-                                    />
-                                    <small
-                                        v-if="education.timeperiod"
-                                        class="section-content__text"
-                                    >
-                                        <em v-text="education.timeperiod" />
-                                    </small>
-                                </a>
-
-                            </div>
-
-                        </section>
-
-                        <hr class="bigger bigger--bottom out-of-margins">
-
-                    </template>
-
-                    <template  v-if="person.speaker.length">
-
-                        <section v-if="person.speaker.length" class="speaker-section section section--without-common-styles">
-
-                            <div class="icon">
-                                <i class="material-icons">speaker_notes</i>
-                                <h2
-                                    v-if="lang.speaker"
-                                    class="section-headline"
-                                    v-text="lang.speaker"
-                                />
-                            </div>
-
-                            <div class="section-content section-content--no-inset">
-                                <a
-                                    v-for="( speak, index ) in person.speaker"
-                                    :key="index"
-                                    :href="speak.website || '#'"
-                                    :title="speak.school"
-                                    rel="noopener"
-                                    target="_blank"
-                                    class="section-content__item"
-                                    @click="! speak.website && $event.preventDefault()"
-                                >
-                                    <h4
-                                        v-if="speak.name"
-                                        class="section-content__header"
-                                        v-text="speak.name"
-                                    />
-                                    <small
-                                        v-if="speak.topic"
-                                        class="section-content__text--light"
-                                    >
-                                        Topics: <em v-text="speak.topic" />
-                                    </small>
-                                </a>
-                            </div>
-
-                        </section>
-
-                    </template>
-
                     <section v-if="person.certifications.length" class="certifications-section section section--without-common-styles">
 
                         <div class="icon">
@@ -445,7 +368,6 @@
                                 v-for="( cert, index ) in person.certifications"
                                 :key="index"
                                 :href="cert.website || '#'"
-                                :title="cert.school"
                                 rel="noopener"
                                 target="_blank"
                                 class="section-content__item"
@@ -460,7 +382,98 @@
                                     v-if="cert.from"
                                     class="section-content__text--light"
                                 >
-                                    <em v-text="cert.from" />
+                                    <em v-text="`-> ${ cert.from }`" />
+                                </small>
+                            </a>
+                        </div>
+
+                    </section>
+
+                    <hr class="out-of-margins">
+
+                    <section v-if="person.education.length" class="education-section section section--without-common-styles">
+
+                        <div class="icon">
+                            <i class="material-icons">school</i>
+                            <h2
+                                v-if="lang.education"
+                                class="section-headline"
+                                v-text="lang.education"
+                            />
+                        </div>
+
+                        <div class="section-content section-content--no-inset">
+
+                            <a
+                                v-for="( education, index ) in person.education"
+                                :key="index"
+                                :href="education.website || '#'"
+                                :title="education.school"
+                                rel="noopener"
+                                target="_blank"
+                                class="section-content__item"
+                                @click="! education.website && $event.preventDefault()"
+                            >
+                                <h4
+                                    v-if="education.school"
+                                    class="section-content__header"
+                                    v-text="education.school"
+                                />
+                                <h4
+                                    v-else-if="education.degree"
+                                    class="section-content__subheader"
+                                    v-text="education.degree"
+                                />
+                                <component
+                                    :is="education.extra ? 'small' : 'span'"
+                                    v-if="education.description"
+                                    class="section-content__text--light"
+                                    v-html="education.description"
+                                />
+                                <small
+                                    v-if="education.timeperiod"
+                                    class="section-content__text"
+                                >
+                                    <em v-text="education.timeperiod" />
+                                </small>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <section v-if="person.speaker.length" class="speaker-section section section--without-common-styles">
+
+                        <div class="icon">
+                            <i class="material-icons">speaker_notes</i>
+                            <h2
+                                v-if="lang.speaker"
+                                class="section-headline"
+                                v-text="lang.speaker"
+                            />
+                        </div>
+
+                        <div class="section-content section-content--no-inset">
+                            <a
+                                v-for="( speak, index ) in person.speaker"
+                                :key="index"
+                                :href="speak.website || '#'"
+                                :title="speak.school"
+                                rel="noopener"
+                                target="_blank"
+                                class="section-content__item"
+                                @click="! speak.website && $event.preventDefault()"
+                            >
+                                <h4
+                                    v-if="speak.name"
+                                    class="section-content__header"
+                                    v-text="speak.name"
+                                />
+                                <small
+                                    v-if="speak.topic"
+                                    class="section-content__text--light"
+                                >
+                                    <em v-text="speak.topic" />
                                 </small>
                             </a>
                         </div>
@@ -563,7 +576,7 @@
                                     <p
                                         v-if="project.description"
                                         class="section-content__text no--margins"
-                                        v-text="project.description"
+                                        v-html="project.description"
                                     />
 
                                     <small
@@ -593,8 +606,6 @@
 
                 <div class="page-inside page--next">
 
-                    <hr class="bigger bigger--top out-of-margins">
-
                     <section v-if="person.knowledge.length" class="knowledge-container section section--without-common-styles">
 
                         <small>
@@ -613,83 +624,114 @@
 
                     </section>
 
-                    <template v-if="person.hobbies.length">
+                    <section v-if="person.hobbies.length" class="hobbies-container section section--without-common-styles">
+                        <small>
+                            <h3
+                                v-if="lang.hobbies"
+                                class="subheadline"
+                                v-text="lang.hobbies"
+                            />
+                            <div class="hobbies-content">
+                                <component
+                                    :is="hobby.url ? 'a' : 'p'"
+                                    v-for="( hobby, index ) in person.hobbies"
+                                    :key="index"
+                                    :class="{
+                                        'external-link': hobby.url,
+                                    }"
+                                    :href="hobby.url ? hobby.url : null"
+                                    :title="hobby.url ? hobby.name : null"
+                                    :rel="hobby.url ? 'noopener' : null"
+                                    :target="hobby.url ? '_blank' : null"
+                                    class="hobby-item"
+                                >
+                                    <i
+                                        v-if="hobby.iconClass"
+                                        :class="hobby.iconClass"
+                                        class="hobby-item__icon contact-icon"
+                                        v-text="hobby.iconText"
+                                    />
+                                    <span class="hobby-item__icon-label" v-html="hobby.name" />
+                                </component>
+                            </div>
+                        </small>
+                    </section>
 
-                        <hr class="out-of-margins">
+                    <section v-if="person.qualities.length" class="hobbies-container section section--without-common-styles">
+                        <small>
+                            <h3
+                                v-if="lang.qualities"
+                                class="subheadline"
+                                v-text="lang.qualities"
+                            />
+                            <div class="hobbies-content">
+                                <component
+                                    :is="hobby.url ? 'a' : 'p'"
+                                    v-for="( hobby, index ) in person.qualities"
+                                    :key="index"
+                                    :class="{
+                                        'external-link': hobby.url,
+                                    }"
+                                    :href="hobby.url ? hobby.url : null"
+                                    :title="hobby.url ? hobby.name : null"
+                                    :rel="hobby.url ? 'noopener' : null"
+                                    :target="hobby.url ? '_blank' : null"
+                                    class="hobby-item"
+                                >
+                                    <i
+                                        v-if="hobby.iconClass"
+                                        :class="hobby.iconClass"
+                                        class="hobby-item__icon contact-icon"
+                                        v-text="hobby.iconText"
+                                    />
+                                    <span class="hobby-item__icon-label" v-html="hobby.name" />
+                                </component>
+                            </div>
+                        </small>
+                    </section>
 
-                        <section class="hobbies-container section section--without-common-styles">
-                            <small>
-                                <h3
-                                    v-if="lang.hobbies"
-                                    class="subheadline"
-                                    v-text="lang.hobbies"
-                                />
-                                <div class="hobbies-content">
-                                    <component
-                                        :is="hobby.url ? 'a' : 'p'"
-                                        v-for="( hobby, index ) in person.hobbies"
-                                        :key="index"
-                                        :class="{
-                                            'external-link': hobby.url,
-                                        }"
-                                        :href="hobby.url ? hobby.url : null"
-                                        :title="hobby.url ? hobby.name : null"
-                                        :rel="hobby.url ? 'noopener' : null"
-                                        :target="hobby.url ? '_blank' : null"
-                                        class="hobby-item"
-                                    >
-                                        <i
-                                            v-if="hobby.iconClass"
-                                            :class="hobby.iconClass"
-                                            class="hobby-item__icon contact-icon"
-                                            v-text="hobby.iconText"
-                                        />
-                                        <span class="hobby-item__icon-label" v-html="hobby.name" />
-                                    </component>
-                                </div>
-                            </small>
-                        </section>
+                    <section v-if="person.languages.length" class="hobbies-container languages-section section section--without-common-styles">
 
-                    </template>
-
-                    <template v-if="person.qualities.length">
-
-                        <hr class="out-of-margins">
-
-                        <section class="hobbies-container section section--without-common-styles">
-                            <small>
-                                <h3
-                                    v-if="lang.qualities"
-                                    class="subheadline"
-                                    v-text="lang.qualities"
-                                />
-                                <div class="hobbies-content">
-                                    <component
-                                        :is="hobby.url ? 'a' : 'p'"
-                                        v-for="( hobby, index ) in person.qualities"
-                                        :key="index"
-                                        :class="{
-                                            'external-link': hobby.url,
-                                        }"
-                                        :href="hobby.url ? hobby.url : null"
-                                        :title="hobby.url ? hobby.name : null"
-                                        :rel="hobby.url ? 'noopener' : null"
-                                        :target="hobby.url ? '_blank' : null"
-                                        class="hobby-item"
-                                    >
-                                        <i
-                                            v-if="hobby.iconClass"
-                                            :class="hobby.iconClass"
-                                            class="hobby-item__icon contact-icon"
-                                            v-text="hobby.iconText"
-                                        />
-                                        <span class="hobby-item__icon-label" v-html="hobby.name" />
-                                    </component>
-                                </div>
-                            </small>
-                        </section>
-
-                    </template>
+                        <small>
+                            <h3
+                                v-if="lang.languages"
+                                class="subheadline"
+                                v-text="lang.languages"
+                            />
+                            <div class="hobbies-content">
+                                <component
+                                    :is="language.url ? 'a' : 'p'"
+                                    v-for="( language, index ) in person.languages"
+                                    :key="index"
+                                    :class="{
+                                        'external-link': language.url,
+                                    }"
+                                    :href="language.url ? language.url : null"
+                                    :title="language.url ? language.name : null"
+                                    :rel="language.url ? 'noopener' : null"
+                                    :target="language.url ? '_blank' : null"
+                                    class="language-item"
+                                >
+                                    <i
+                                        v-if="language.iconClass"
+                                        :class="language.iconClass"
+                                        class="hobby-item__icon contact-icon"
+                                        v-text="language.iconText"
+                                    />
+                                    <span
+                                        v-if="language.name"
+                                        class="language-item__icon-label"
+                                        v-text="language.name"
+                                    />: &nbsp;
+                                    <strong
+                                        v-if="language.value"
+                                        class="language-item__icon-label"
+                                        v-text="language.value"
+                                    />
+                                </component>
+                            </div>
+                        </small>
+                    </section>
 
                 </div>
 
@@ -780,7 +822,7 @@
                                             <small
                                                 v-if="contribution.description"
                                                 class="section-content__text experience__note"
-                                                v-text="contribution.description"
+                                                v-html="contribution.description"
                                             />
 
                                         </div>
@@ -798,11 +840,25 @@
         </div>
 
         <!-- Lang switcher -->
-        <div v-if="! $route.query.pdf" class="language-switcher no-print">
-            <router-link v-if="$route.query.lang !== 'en'" :to="{ query: { ... $route.query, lang: 'en' } }">
+        <div
+            v-if="! $route.query.pdf"
+            class="language-switcher no-print"
+            @click="() => {
+
+                window.scroll(
+                    {
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth',
+                    }
+                )
+
+            }"
+        >
+            <router-link v-if="$route.query.lang && $route.query.lang !== 'en'" :to="{ query: { ... $route.query, lang: 'en' } }">
                 🌍 ENGLISH
             </router-link>
-            <router-link v-else  :to="{ query: { ... $route.query, lang: 'it' } }">
+            <router-link v-else :to="{ query: { ... $route.query, lang: 'it' } }">
                 🌍 ITALIAN
             </router-link>
         </div>
@@ -811,18 +867,19 @@
 </template>
 
 <script>
+
     import Vue from 'vue';
     import { getVueOptions } from './options';
-    import lang from '@/lang/en';
 
     const name = 'lux';
 
     export default Vue.component(
         name,
         getVueOptions(
-            name,
+            name
         ),
     );
+
 </script>
 
 <style

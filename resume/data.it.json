@@ -7,158 +7,365 @@
         "middle": null,
         "last": "Iaconelli"
     },
-    "about": null,
-    "position": "👴🏻 Senior developer",
-    "playing": "🏳️‍🌈 At this moment, i'm playing w/ SSR technologies pwned by Algolia and GraphQL",
+    "about": "Con oltre 15 anni di esperienza nello sviluppo frontend, mi specializzo nella creazione di applicazioni ad alte prestazioni utilizzando VueJs e NuxtJs. Come <a href=\"https://nuxt.com/modules/prune-html\" target=\"_blank\"><strong>contributore ufficiale di NuxtJs</strong></a> e <a href=\"https: //www.youtube.com/watch?v=4-HyGHAIOcY\" target=\"_blank\"><strong>speaker a conferenze VueJs</strong></a>, unisco competenze tecniche a una passione per l'open-source e il mentoring; Disponibile per lavori in remoto in tutto il mondo; Sono <strong>Laureato</strong> e <strong>Certificato</strong> da <a href=\"https://confirm.udacity.com/LD2DHJKR\" target=\"_blank\"><strong>Google</strong></a>",
+    "position": "👴🏻 Senior Frontend Developer (Specialista Vue/Nuxt)",
+    "playing": "⚡ Applicazioni ad alte prestazioni con VueJs e NuxtJs",
     "birth": {
         "year": 1990,
         "month": 6,
         "day": 23,
-        "location": "Faenza, Ravenna, Italy"
+        "location": "Faenza, Ravenna, Italia"
     },
     "contact": {
         "email": "lucabelli@msn.com",
         "phone": "+39 320 333 9245",
-        "street": "Piazza Fra Saba, 6/A",
-        "city": "Faenza, Ravenna, Italy",
-        "website": "lucaiaconelli.it",
+        "street": "Via Larga, 17",
+        "city": "Solarolo 48027, Ravenna, Italia",
+        "website": "https://www.lucaiaconelli.it",
         "linkedin": "https://linkedin.it/in/luxdamore",
         "github": "luxdamore",
         "medium": "luxdamore",
         "skype": "lux99.."
     },
-    "lang": "en, it",
+    "lang": [
+        "en",
+        "it"
+    ],
     "experiences": [
         {
+            "company": "Luca Iaconelli",
+            "position": "Freelance/Contratto",
+            "timeperiod": "Lug 2020 - oggi",
+            "description": "Sviluppatore di applicazioni ad alte prestazioni e responsive per web, mobile e piattaforme native: implementazione UI/UX (layout, stili, accessibilità), ingegneria delle prestazioni (ottimizzazione, caching, accesso offline), controllo qualità (testing, integrazione CI/CD)",
+            "website": "https://www.illimity.com",
+            "skills": [
+                "VueJS",
+                "NuxtJS",
+                "SocketIO",
+                "Javascript",
+                "Typescript",
+                "PHP",
+                "Wordpress",
+                "Laravel",
+                "Angular",
+                "MySQL",
+                "GraphQL",
+                "AWS",
+                "Cognito",
+                "S3",
+                "CSS",
+                "SCSS",
+                "HTML",
+                "Git",
+                "NodeJs",
+                "DinamoDB",
+                "Lambda",
+                "Vitest",
+                "Playwright",
+                "Unit test"
+            ],
+            "clients": [
+                {
+                    "company": "Abilio",
+                    "position": "Full stack developer",
+                    "timeperiod": "Apr 2022 - Ago 2025",
+                    "description": "Responsabile di tutti i progetti aziendali, dalla progettazione architetturale al deployment in produzione: garantiti standard di accessibilità e benchmark di prestazioni (Web Vitals) con best practice; siti istituzionali ottimizzati per SEO e grandi applicazioni web; leadership del team: mentorship di sviluppatori junior con code review e formazione",
+                    "website": "https://www.abilio.com"
+                },
+                {
+                    "company": "DotEnv",
+                    "position": "Specialista FrontEnd architect",
+                    "timeperiod": "Set 2023 - Apr 2024",
+                    "description": "Implementazioni UI/UX e ingegneria delle prestazioni",
+                    "website": "https://www.dotenv.it"
+                },
+                {
+                    "company": "Cuepress",
+                    "position": "Sviluppatore Wordpress",
+                    "timeperiod": "Gen 2023 - Gen 2024",
+                    "description": "Creazione piattaforma e ottimizzazione delle prestazioni, miglioramenti SEO",
+                    "website": "https://www.cuepress.com"
+                },
+                {
+                    "company": "Regione Emilia-Romagna",
+                    "position": "FrontEnd Engineer",
+                    "timeperiod": "Gen 2022 - Mar 2022",
+                    "description": "Modernizzazione progetto governativo: migrazione del sistema, ottimizzazione del sito",
+                    "website": "https://migrerapp.it"
+                },
+                {
+                    "company": "Neprix",
+                    "position": "Specialista FrontEnd architect",
+                    "timeperiod": "Set 2020 - Apr 2022",
+                    "description": "Progettazione di applicazioni, che hanno aumentato i ricavi dei clienti fino al +35%",
+                    "website": "https://www.abilio.com"
+                }
+            ]
+        },
+        {
             "company": "Illimity Bank",
-            "position": "Mobile and web specialist",
-            "timeperiod": "July 2019 - now",
-            "description": "Writer of performing and responsive applications for web, mobile and native; layout, style, best practices, accessibility, performance optimization, caching techniques, testing, debugging and offline access",
-            "website": "https://www.illimity.com"
+            "position": "Full stack developer",
+            "timeperiod": "Lug 2019 - Ago 2020",
+            "description": "Responsabile del team Frontend, garantendo la consegna di codice di alta qualità entro le scadenze, selezionando tecnologie e design architetturali allineati alle esigenze aziendali, con focus su qualità e coerenza del codice. Questo ruolo mi ha permesso di rimanere aggiornato sulle best practice frontend e migliorare continuamente le mie capacità di sviluppo, comunicazione e mentorship",
+            "website": "https://www.illimitybank.com",
+            "skills": [
+                "NuxtJs",
+                "VueJS",
+                "GraphQL",
+                "Cognito",
+                "AppSync",
+                "S3",
+                "DinamoDB",
+                "Lambda",
+                "Javascript",
+                "NodeJs",
+                "Jest"
+            ]
         },
         {
             "company": "IT Auction",
-            "position": "Mobile and web specialist",
-            "timeperiod": "April 2017 - July 2019",
+            "position": "Full stack developer",
+            "timeperiod": "Apr 2017 - Lug 2019",
             "preNote": "",
+            "description": "Sviluppo applicazioni web serverless e data-driven utilizzando tecnologie all'avanguardia. In questa esperienza ho affinato le mie competenze in Frontend e sviluppo di applicazioni",
             "note": "",
-            "website": "https://www.itauction.it"
+            "website": "https://www.itauction.it",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "NuxtJs",
+                "VueJS",
+                "GraphQL",
+                "Wordpress",
+                "Laravel",
+                "PHP",
+                "MySQL",
+                "Angular",
+                "Javascript",
+                "NodeJs"
+            ]
         },
         {
             "company": "Studio Mado",
             "position": "Full stack developer",
-            "timeperiod": "December 2015 - April 2017",
+            "timeperiod": "Dic 2015 - Apr 2017",
             "preNote": "",
             "note": "",
-            "website": "https://www.studiomado.it"
+            "description": "Sviluppato e mantenuto applicazioni front-end di alto livello, utilizzando una gamma di tecnologie tra cui JavaScript (ES6+), TypeScript, CSS3/Sass e HTML5",
+            "website": "https://www.studiomado.it",
+            "skills": [
+                "NuxtJs",
+                "VueJS",
+                "HTML",
+                "TypeScript",
+                "Algolia",
+                "Wordpress",
+                "Laravel",
+                "PHP",
+                "MySQL",
+                "Angular",
+                "Javascript",
+                "NodeJs"
+            ]
         },
         {
             "company": "IDEARTE Design",
-            "position": "Co-Founder and Creative developer",
-            "timeperiod": "December 2015 - July 2019",
-            "description": "I've started a Digital Agency and i've worked on the planning and management about the setup of the entire company",
-            "website": "https://ideartedesign.com"
+            "position": "Co-Fondatore/Lead developer",
+            "timeperiod": "Dic 2015 - Lug 2019",
+            "description": "La mia agenzia digitale specializzata in soluzioni web growth-driven",
+            "website": "https://ideartedesign.com",
+            "skills": [
+                "NuxtJs",
+                "VueJS",
+                "Wordpress",
+                "HTML",
+                "CSS",
+                "SASS",
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "Apache",
+                "Javascript",
+                "NodeJs",
+                "Electron"
+            ]
         },
         {
             "company": "SED Web Agency",
             "position": "Full stack developer",
-            "timeperiod": "December 2014 - December 2015",
-            "description": "Design and development of many e-commerce, e-learning platforms, landing pages and custom plug-ins on the WordPress platform plus the development of mobile applications",
-            "website": "https://www.sedweb.it"
+            "timeperiod": "Dic 2014 - Dic 2015",
+            "description": "Progettazione e sviluppo di e-commerce, piattaforme e-learning, landing page e plug-in personalizzati su piattaforma WordPress, oltre allo sviluppo di applicazioni mobile",
+            "website": "https://www.sedweb.it",
+            "skills": [
+                "Angular",
+                "Wordpress",
+                "PHP",
+                "MySQL",
+                "Ionic",
+                "Cordoba",
+                "Apache",
+                "Javascript",
+                "NodeJs"
+            ]
         },
         {
             "company": "Beta Formazione",
-            "position": "Front end developer",
-            "timeperiod": "December 2013 - December 2014",
-            "description": "Design and development of many e-commerce and e-learning platforms",
-            "website": "https://www.betaformazione.com"
+            "position": "FrontEnd developer",
+            "timeperiod": "Dic 2013 - Dic 2014",
+            "description": "Progettazione e sviluppo di e-commerce e piattaforme e-learning",
+            "website": "https://www.betaformazione.com",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Angular",
+                "Wordpress",
+                "Javascript",
+                "PHP",
+                "MySQL"
+            ]
         },
         {
             "company": "Your3Minutes",
             "position": "Full stack developer",
-            "description": "Design and development of an online video-recruiting platform",
-            "timeperiod": "March 2014 - August 2014",
-            "website": "https://www.telegraph.co.uk/finance/businessclub/business-club-video/technology-sector-videos/10689382/your-3-minutes.html"
+            "description": "Piattaforma multilingue di video-reclutamento web, utilizzabile anche su dispositivi mobile",
+            "timeperiod": "Mar 2014 - Ago 2014",
+            "website": "https://youtu.be/g5I9_wbz8Vg",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "MySQL"
+            ]
         },
         {
             "company": "Studio Abacus",
-            "position": "Support teacher of computer science",
-            "timeperiod": "May 2011 - August 2014"
+            "position": "Mentore di programmazione",
+            "description": "Mentore di studenti diversi, adattando le spiegazioni agli stili di apprendimento individuali",
+            "timeperiod": "Mag 2011 - Ago 2014",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "Arduino",
+                "Java",
+                "MySQL"
+            ]
         },
         {
-            "company": "GEMOS Soc. Coop.",
-            "position": "Problem solver and help-desk",
-            "timeperiod": "July 2009 - December 2013",
-            "website": "https://www.gemos.it"
+            "company": "GEMOS",
+            "position": "Full stack developer",
+            "description": "Supporto tecnico completo per 700+ dipendenti su 200+ sistemi",
+            "timeperiod": "Lug 2009 - Dic 2013",
+            "website": "https://www.gemos.it",
+            "skills": [
+                "Javascript",
+                "HTML",
+                "CSS",
+                "MySQL",
+                "MSSQL",
+                "PHP",
+                "jQuery",
+                "Wordpress",
+                "Joomla"
+            ]
         }
     ],
     "speaker": [
         {
+            "name": "VueJS Day Italia",
+            "topic": "Memory leak, design systems e SSR",
+            "description": "Come affrontare problemi sconosciuti",
+            "website": "https://www.youtube.com/watch?v=4-HyGHAIOcY"
+        },
+        {
             "name": "Linux day",
-            "topic": "Progressive web applications",
+            "topic": "Applicazioni web progressive",
+            "description": "Come le PWA possono aiutare il tuo e-commerce a ottenere più conversioni e aumentare i guadagni",
             "website": "https://linuxday.it"
         },
         {
             "name": "DevRomagna",
-            "topic": "VueJs and Nuxt",
+            "topic": "VueJs, NuxtJs",
+            "description": "Perché Vue invece di React o Angular?",
             "website": "https://devromagna.org"
         },
         {
             "name": "Local MeetUp",
-            "topic": "Javascript, best practices and accessibility",
+            "topic": "Javascript",
+            "description": "Best practice, Accessibilità, cosa dovresti sapere su JS",
             "website": "https://www.meetup.com"
         }
     ],
     "education": [
         {
-            "degree": "Google mobile web specialist",
-            "timeperiod": "October 2017 - September 2018",
-            "description": "Nano-degree by Google",
+            "degree": "Specialista Google Mobile e web",
+            "timeperiod": "Ottobre 2017 - Settembre 2018",
+            "description": "Laurea online di Google sponsorizzata da una borsa di studio da Google",
             "website": "https://confirm.udacity.com/LD2DHJKR"
         },
         {
-            "degree": "I.T.I.S. - IT Abacus",
-            "timeperiod": "September 2005 - July 2009",
-            "description": "Higher institute of IT, Math and Statistics",
+            "degree": "ITIS Informatica Abacus",
+            "timeperiod": "Settembre 2005 - Luglio 2009",
+            "description": "Informatica, matematica e statistica",
             "website": "https://itisravenna.edu.it/"
         },
         {
-            "degree": "Extra-courses",
-            "description": "Philosophy, Math, German, Photography, Microsoft Office, Computer security"
+            "degree": "Extra",
+            "extra": true,
+            "description": "Filosofia, Fotografia, Microsoft Office, Sicurezza informatica"
         }
     ],
     "skills": [
         {
-            "name": "Problem solving",
+            "name": "AWS",
+            "hot": false,
+            "first": false,
+            "level": 72
+        },
+        {
+            "name": "S3",
+            "hot": false,
+            "first": false,
+            "level": 72
+        },
+        {
+            "name": "NuxtJs",
+            "hot": true,
+            "first": true,
+            "level": 99
+        },
+        {
+            "name": "VueJs",
+            "hot": true,
+            "first": true,
+            "level": 99
+        },
+        {
+            "name": "WordPress",
+            "hot": true,
+            "first": true,
+            "level": 90
+        },
+        {
+            "name": "jQuery",
             "level": 99
         },
         {
             "name": "CSS",
-            "level": 96
-        },
-        {
-            "name": "WordPress",
-            "level": 90
+            "hot": true,
+            "level": 99
         },
         {
             "name": "ReactJs",
             "level": 63
         },
         {
-            "name": "NoSQL",
-            "level": 54
-        },
-        {
-            "name": "VueJs",
-            "level": 96
-        },
-        {
-            "name": "SSR",
-            "level": 92
-        },
-        {
-            "name": "Nuxt",
-            "level": 92
+            "name": "MySQL",
+            "hot": true,
+            "level": 70
         },
         {
             "name": "W3C",
@@ -166,6 +373,7 @@
         },
         {
             "name": "HTML",
+            "hot": true,
             "level": 92
         },
         {
@@ -174,10 +382,12 @@
         },
         {
             "name": "Performance",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Ionic",
+            "hot": true,
             "level": 81
         },
         {
@@ -185,39 +395,32 @@
             "level": 70
         },
         {
-            "name": "Arduino",
-            "level": 54
-        },
-        {
-            "name": "SQL",
-            "level": 81
-        },
-        {
-            "name": "Redux",
-            "level": 81
-        },
-        {
             "name": "Azure",
-            "level": 54
+            "level": 72
         },
         {
             "name": "NodeJs",
+            "hot": true,
             "level": 92
         },
         {
             "name": "Git",
-            "level": 92
+            "hot": true,
+            "level": 90
         },
         {
             "name": "Accessibility",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Unit test",
+            "hot": true,
             "level": 81
         },
         {
             "name": "E2E",
+            "hot": true,
             "level": 69
         },
         {
@@ -226,7 +429,7 @@
         },
         {
             "name": "Docker",
-            "level": 69
+            "level": 63
         },
         {
             "name": "Cordova",
@@ -237,156 +440,176 @@
             "level": 72
         },
         {
+            "name": "Vite",
+            "hot": true,
+            "level": 80
+        },
+        {
             "name": "PHP",
-            "level": 81
+            "hot": true,
+            "level": 80
         },
         {
             "name": "Laravel",
+            "hot": true,
             "level": 63
         },
         {
             "name": "Javascript",
-            "level": 96
+            "hot": true,
+            "level": 99
         },
         {
             "name": "SASS",
-            "level": 96
+            "hot": true,
+            "level": 99
         },
         {
-            "name": "PostCSS",
-            "level": 92
-        },
-        {
-            "name": "Apollo",
-            "level": 72
-        },
-        {
-            "name": "Zend",
-            "level": 63
-        },
-        {
-            "name": "I18n",
+            "name": "i18n",
+            "hot": true,
             "level": 81
         },
         {
             "name": "ThreeJs",
-            "level": 54
+            "level": 45
         },
         {
             "name": "TypeScript",
-            "level": 72
+            "hot": true,
+            "level": 80
         },
         {
             "name": "Agile",
+            "hot": true,
             "level": 81
         },
         {
-            "name": "ES.Next",
-            "level": 92
-        },
-        {
-            "name": "AngularJs",
+            "name": "Angular",
+            "hot": true,
             "level": 90
         },
         {
             "name": "Nativescript",
-            "level": 72
+            "level": 70
         },
         {
             "name": "RestAPI",
-            "level": 92
-        },
-        {
-            "name": "Symfony",
-            "level": 63
+            "level": 99
         },
         {
             "name": "Electron",
-            "level": 69
+            "level": 70
         },
         {
             "name": "C#",
-            "level": 54
+            "level": 50
         },
         {
-            "name": "C++",
-            "level": 45
+            "name": "Figma",
+            "level": 70
         },
         {
-            "name": "Java",
-            "level": 36
-        },
-        {
-            "name": "Lerna",
+            "name": "UI/UX",
             "level": 72
         },
         {
-            "name": "Design System",
+            "name": "Vitest",
+            "hot": true,
             "level": 72
+        },
+        {
+            "name": "Playwright",
+            "hot": true,
+            "level": 72
+        },
+        {
+            "name": "Strapi",
+            "level": 70
+        },
+        {
+            "name": "Cypress",
+            "level": 60
         }
     ],
     "knowledge": [
         {
+            "name": "🤔 Problem solving"
+        },
+        {
             "name": "🔥 Full stack"
         },
         {
-            "name": "✌ Creative"
+            "name": "✌ Creatività"
         }
     ],
     "projects": [
         {
             "name": "Curriculum vitae",
-            "platform": "VueJs, NodeJs",
-            "year": 2019,
-            "description": "This resume, is built by code",
+            "platform": "VueJs, NodeJs, Puppeteer",
+            "year": 2014,
+            "description": "Questo curriculum, è fatto da codice",
             "url": "https://curriculumvitae.lucaiaconelli.it"
         },
         {
-            "name": "Miracle video agency",
-            "platform": "VueJs, Nuxt, WordPress",
-            "year": 2019,
-            "description": "Multi-awarded video agency",
-            "url": "https://miraclevideoagency.com"
+            "name": "FOS Ceramiche",
+            "platform": "VueJs, NuxtJs, WordPress Headless",
+            "year": 2020,
+            "description": "Crea accessori per la casa in ceramica che attirano l'attenzione, per interni con una personalità esclusiva ed elegante",
+            "url": "https://www.fosceramiche.it"
         },
         {
-            "name": "Fallimenti.it",
-            "platform": "VueJs, Nuxt, GraphQL, Algolia",
-            "year": 2019,
-            "description": "The biggest italian's platform for bankruptcy assets",
-            "url": "https://fallimenti.it"
+            "name": "Fallimenti",
+            "platform": "VueJs, NuxtJs, GraphQL, Algolia, Cognito, S3, Strapi, NodeJs",
+            "year": 2024,
+            "description": "La più grande piattaforma italiana per beni fallimentari",
+            "url": "https://www.fallimenti.it"
+        },
+        {
+            "name": "Quimmo",
+            "platform": "VueJs, NuxtJs, GraphQL, Typesense, Azure, AppSync, NodeJs",
+            "year": 2024,
+            "description": "Competitor di Immobiliare.it, ma per case all'asta",
+            "url": "https://www.quimmo.it"
         },
         {
             "name": "IDEARTE Design",
-            "platform": "WordPress, Javascript",
+            "platform": "WordPress, Javascript, ThreeJs",
             "year": 2017,
-            "description": "Digital agency landing page",
+            "description": "Landing page dell'agenzia digitale",
             "url": "https://ideartedesign.com"
         },
         {
             "name": "Aperitivus",
-            "platform": "AngularJs, PHP",
+            "platform": "Angular, PHP, Wordpress",
             "year": 2016,
-            "description": "Project winner of the first Ravenna's italian-hackathon",
-            "url": "http://www.comune.ra.it/Notizie-di-copertina/Gli-esiti-e-i-vincitori-di-HackathonRavenna"
+            "description": "Vincitore del 1° Hackathon italiano (Ravenna)",
+            "url": "https://www.comune.ra.it/stampa-e-comunicazione/comunicati/archivio-comunicati-dellufficio-stampa/2016-2/hackathon-ravenna-ecco-le-idee-premiate-assessore-costantini-creativita-e-innovazione-in-tutta-larea-grazie-agli-eventi-di-palazzo-rasponi"
         },
         {
             "name": "Tecnoacademy",
-            "platform": "WordPress, jQuery, Sensei",
+            "platform": "WordPress, jQuery, Javascript, E-learning, PHP",
             "year": 2015,
-            "description": "Huge e-learning e-commerce for the Italian ministry",
+            "description": "Piattaforma e-learning/e-commerce conforme alle normative governative con funzionalità di certificazione dei corsi secondo le direttive del Ministero",
             "url": "https://tecnoacademy.it"
         },
         {
+            "name": "Jam car parts",
+            "platform": "WordPress, jQuery, Javascript, MySQL, PHP",
+            "year": 2022,
+            "description": "Motore di ricerca per pezzi di ricambio auto usati in Giamaica",
+            "url": "https://jamcarparts.com"
+        },
+        {
             "name": "Royal Canin",
-            "platform": "HTML, SCSS, Javascript",
+            "platform": "HTML, CSS, Javascript, Figma",
             "year": 2014,
-            "description": "Designed by ProArte Lugo, turned into code by my team",
+            "description": "Progettato da ProArte Lugo, trasformato in codice dal mio team",
             "url": "https://royalcanin.it"
         }
     ],
     "hobbies": [
         {
-            "name": "Photography",
+            "name": "Fotografia e post-produzione",
             "iconClass": "emoji-icons",
             "iconText": "📸",
             "url": "https://instagram.com/luxdamore"
@@ -398,51 +621,94 @@
             "url": "https://instagram.com/luxdamore"
         },
         {
-            "name": "Playing guitar",
+            "name": "Sviluppo Open-Source",
+            "iconClass": "emoji-icons",
+            "iconText": "💻",
+            "url": "https://github.com/luxdamore"
+        },
+        {
+            "name": "Public Speaking",
+            "iconClass": "emoji-icons",
+            "iconText": "🎤"
+        },
+        {
+            "name": "Suonare la chitarra",
             "iconClass": "emoji-icons",
             "iconText": "🎸"
         }
     ],
     "qualities": [
         {
-            "name": "Thinking philosophically",
+            "name": "Pensiero filosofico",
             "iconClass": "emoji-icons",
             "iconText": "💭"
         },
         {
-            "name": "Intellectual curiosity",
+            "name": "Curiosità intellettuale",
             "iconClass": "emoji-icons",
             "iconText": "🧠"
         },
         {
-            "name": "Passionate and supportive",
+            "name": "Passione e supporto",
             "iconClass": "emoji-icons",
             "iconText": "👂"
+        },
+        {
+            "name": "Apprendimento curioso",
+            "iconClass": "emoji-icons",
+            "iconText": "⏺️"
+        },
+        {
+            "name": "Ottimizzazione delle prestazioni",
+            "iconClass": "emoji-icons",
+            "iconText": "⚡"
+        },
+        {
+            "name": "Advocacy per l'accessibilità",
+            "iconClass": "emoji-icons",
+            "iconText": "♿"
+        },
+        {
+            "name": "Mentoring",
+            "iconClass": "emoji-icons",
+            "iconText": "🧑‍🏫"
         }
     ],
     "repo": [
         {
-            "name": "🖱️ vue-css-doodle",
-            "description": "css-doodle, a web component for drawing patterns with CSS",
+            "name": "🎨 vue-css-doodle",
+            "description": "Componente web per pattern generati da CSS",
             "url": "https://luxdamore.github.io/vue-css-doodle",
             "printUrl": false
         },
         {
             "name": "🖱️ vue-cursor-fx",
-            "description": "An animated cursor effect for interactive elements",
+            "description": "Effetti cursor interattivi per VueJs",
             "url": "https://luxdamore.github.io/vue-cursor-fx",
             "printUrl": false
         },
         {
             "name": "📷 vue-fake3d-image-effect",
-            "description": "A fake 3D image effect made with WebGL",
+            "description": "Effetti immagine 3D basati su WebGL",
             "url": "https://luxdamore.github.io/vue-fake3d-image-effect",
             "printUrl": false
         },
         {
             "name": "📁 nuxt-apis-to-file",
-            "description": "Merge and transform API calls for better performances",
-            "url": "https://luxdamore.github.io/nuxt-apis-to-file",
+            "description": "Unisci e trasforma chiamate API per migliorare le prestazioni",
+            "url": "https://nuxt.com/modules/apis-to-file",
+            "printUrl": false
+        },
+        {
+            "name": "🧹 nuxt-prune-html",
+            "description": "Migliora le prestazioni del tuo sito NuxtJs",
+            "url": "https://nuxt.com/modules/prune-html",
+            "printUrl": false
+        },
+        {
+            "name": "🤖 nuxt-humans-txt",
+            "description": "Conosci le persone dietro un sito web",
+            "url": "https://nuxt.com/modules/humans-txt",
             "printUrl": false
         },
         {
@@ -455,12 +721,22 @@
     "contributions": [
         {
             "name": "🚀 nuxt",
-            "description": "Meta-framework for universal applications",
+            "description": "Meta-framework per applicazioni universali SSR (per VueJS)",
             "url": "https://nuxtjs.org"
         },
         {
+            "name": "🧭 vue-router",
+            "description": "Framework di navigazione (per VueJS)",
+            "url": "https://router.vuejs.org/"
+        },
+        {
             "name": "👔 vue-instantsearch",
-            "description": "Realtime search engine technology",
+            "description": "Motore di ricerca in tempo reale (per VueJS)",
+            "url": "https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/"
+        },
+        {
+            "name": "🔍 algolia",
+            "description": "Motore di ricerca in tempo reale",
             "url": "https://www.algolia.com"
         },
         {
@@ -469,15 +745,44 @@
             "url": "https://aws.amazon.com/appsync"
         },
         {
-            "name": "🕸 apollo-graphql",
-            "description": "Apollo Data Graph Platform",
-            "url": "https://www.apollographql.com"
+            "name": "🕸 apollo-graphQL",
+            "description": "Apollo Data GraphQL Platform",
+            "url": "https://www.apollographQL.com"
+        }
+    ],
+    "languages": [
+        {
+            "name": "Italiano",
+            "value": "Madrelingua"
+        },
+        {
+            "name": "Inglese",
+            "value": "Professionale"
+        },
+        {
+            "name": "Spagnolo",
+            "value": "Competenza elementare"
         }
     ],
     "certifications": [
         {
-            "name": "Google Developer Challenge Scholarship Winner",
-            "from": "Udacity and Google"
+            "name": "Mobile and Web Specialist",
+            "from": "Google",
+            "website": "https://confirm.udacity.com/LD2DHJKR",
+            "description": "Sono Laureato e Certificato da Google (tramite borsa di studio Google)"
+        },
+        {
+            "name": "Vincitore Google Developer Challenge Scholarship",
+            "from": "Udacity e Google",
+            "description": "Vincitore della challenge di Google, tra i primi 1000 su oltre 200.000 candidati da tutto il mondo"
+        },
+        {
+            "name": "VueJs",
+            "from": "Udemy"
+        },
+        {
+            "name": "NuxtJs",
+            "from": "MasteringNuxt"
         },
         {
             "name": "ECMAScript",
@@ -488,7 +793,8 @@
             "from": "EF Education First"
         },
         {
-            "name": "ECDL"
+            "name": "ECDL",
+            "from": "Scuola"
         }
     ]
 }

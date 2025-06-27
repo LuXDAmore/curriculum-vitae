@@ -33,27 +33,25 @@
                 <div>
                     <router-link
                         to="/resume/lux"
-                        title="Open preview"
                         class="btn-link"
-                        data-content="👁️ Open preview (EN) 👁️"
+                        data-content="Open preview (EN) ➡️"
                         target="_self"
                         rel="noopener"
                     >
                         <span class="link-inner">
-                            👁️ Open preview (EN) 👁️
+                            Open preview (EN) ➡️
                         </span>
                     </router-link>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <router-link
                         to="/resume/lux?lang=it"
-                        title="Apri anteprima"
                         class="btn-link"
-                        data-content="👁️ Open preview (Italian) 👁️"
+                        data-content="Apri preview (Italiaon) ➡️"
                         target="_self"
                         rel="noopener"
                     >
                         <span class="link-inner">
-                            👁️ Open preview (Italian)👁️
+                            Apri preview (Italiano) ➡️
                         </span>
                     </router-link>
                 </div>
@@ -76,13 +74,13 @@
                         href="/pdf/lux-it.pdf"
                         class="btn-link"
                         title="Download"
-                        data-content="⬇️ Download (Italian) ⬇️"
+                        data-content="⬇️ Download (Italiano) ⬇️"
                         target="_blank"
                         rel="noopener"
                         download
                     >
                         <span class="link-inner">
-                            ⬇️ Download (Italian) ⬇️
+                            ⬇️ Download (Italiano) ⬇️
                         </span>
                     </a>
                 </div>

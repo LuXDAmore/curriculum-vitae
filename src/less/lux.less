@@ -78,10 +78,10 @@
 
         @media screen and ( min-width: 800px ), print {
 
-            flex: 1 1 36%;
-            width: 36%;
-            max-width: 36%;
-            min-width: 36%;
+            flex: 1 1 34%;
+            width: 34%;
+            max-width: 34%;
+            min-width: 34%;
 
         }
 
@@ -144,21 +144,20 @@
         display: flex;
         flex: 1 1 100%;
         flex-direction: column;
-
         width: 100%;
 
         @media screen and ( min-width: 800px ), print {
 
-            flex: 1 1 64%;
-            width: 64%;
-            max-width: 64%;
-            min-width: 64%;
+            flex: 1 1 66%;
+            width: 66%;
+            max-width: 66%;
+            min-width: 66%;
 
         }
 
         .page-inside {
 
-            padding: 12px 30px;
+            padding: 6px 30px 2px;
             background-color: #fff;
 
         }
@@ -274,6 +273,24 @@
 
         padding-top: 14px;
 
+        address + p {
+
+            margin-left: -16px;
+            margin-right: -16px;
+
+        }
+
+    }
+
+    .playing-container {
+
+        blockquote {
+
+            margin-left: -16px;
+            margin-right: -16px;
+
+        }
+
     }
 
     .divider {
@@ -323,7 +340,8 @@
 
     .about-container {
 
-        opacity: 1;
+        margin-left: -16px;
+        margin-right: -16px;
 
         ::v-deep a {
 
@@ -502,7 +520,7 @@
         &::before {
 
             content: "";
-            display: block;
+            display: none;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -548,13 +566,51 @@
 
         &-clients-container {
 
-            padding-left: 32px;
+            padding-left: 24px !important;
 
-            h4::before {
+        }
 
-                content: "~";
+        .section-content__subheader {
+
+            position: relative;
+            gap: 6px;
+
+            h4,
+            h5,
+            h5 + small {
+
+                white-space: nowrap;
+                line-height: 1.5;
 
             }
+
+            h4 {
+
+                flex: 1 1 auto;
+
+            }
+
+            h5 {
+
+                font-size: 1rem;
+                text-decoration: underline;
+
+                + small {
+
+                    position: absolute;
+                    font-size: .7rem;
+                    top: 5px;
+                    right: -18px;
+
+                }
+
+            }
+
+        }
+
+        small.section-content__text--light {
+
+            text-align: right;
 
         }
 
@@ -569,10 +625,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 2px;
-
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-left: 30px;
+        margin-top: 6px;
 
         &--no-padding {
 
@@ -727,7 +780,7 @@
 
             pre {
 
-                text-align: right;
+                max-width: 100%;
 
             }
 
@@ -802,6 +855,58 @@
 
         }
 
+        .section-content {
+
+            display: flex;
+            flex-flow: column;
+            gap: 5px;
+            margin-top: 1px;
+            padding-left: 4px;
+
+            .section-content__item {
+
+                margin-bottom: 0 !important;
+
+            }
+            .section-content__text {
+
+                line-height: 1.38 !important;
+                margin-left: -22px;
+                margin-right: -22px;
+                font-size: 81%;
+
+            }
+
+        }
+
+        .experience-section .section-content {
+
+            margin-top: 3px;
+            gap: 1px;
+            margin-bottom: 4px;
+
+        }
+
+        .section-content__subheader {
+
+            margin-bottom: -1px;
+
+        }
+        .section-content-grid {
+
+            justify-content: flex-start;
+            padding: 0 !important;
+            margin: 3px -24px 0 !important;
+            font-size: 74%;
+
+            .grid-item {
+
+                border: 1px solid currentColor;
+
+            }
+
+        }
+
     }
 
     .experience__note {
@@ -841,6 +946,16 @@
                 transform: rotate( 63deg );
 
             }
+
+        }
+
+    }
+
+    .projects-section {
+
+        .section-content {
+
+            padding-left: 16px;
 
         }
 
@@ -891,7 +1006,6 @@
 
         display: inline-block;
         margin-bottom: 8px;
-        text-transform: capitalize;
 
     }
 
@@ -911,6 +1025,18 @@
                 display: none;
 
             }
+
+        }
+
+    }
+
+    .languages-section {
+
+        .language-item__icon-label {
+
+            min-width: 54px;
+            display: inline-block;
+            vertical-align: middle;
 
         }
 
