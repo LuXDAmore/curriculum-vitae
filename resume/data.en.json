@@ -547,7 +547,7 @@
             "name": "Curriculum vitae",
             "platform": "VueJs, NodeJs, Puppeteer",
             "year": 2014,
-            "description": "This resume, is built by code",
+            "description": "This resume is built with code",
             "url": "https://curriculumvitae.lucaiaconelli.it"
         },
         {

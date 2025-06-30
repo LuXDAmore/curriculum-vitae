@@ -3,7 +3,7 @@ const lang = {
     certifications: 'Certifications',
     qualities: 'Qualities',
     hobbies: 'Hobbies',
-    speaker: 'Speechs',
+    speaker: 'Speeches',
     contact: 'Contact',
     languages: 'Languages',
     born: 'Born',
