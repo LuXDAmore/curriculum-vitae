@@ -843,17 +843,6 @@
         <div
             v-if="! $route.query.pdf"
             class="language-switcher no-print"
-            @click="() => {
-
-                window.scroll(
-                    {
-                        top: 0,
-                        left: 0,
-                        behavior: 'smooth',
-                    }
-                )
-
-            }"
         >
             <router-link v-if="$route.query.lang && $route.query.lang !== 'en'" :to="{ query: { ... $route.query, lang: 'en' } }">
                 🌍 ENGLISH
