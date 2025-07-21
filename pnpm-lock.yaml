@@ -18,8 +18,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       material-icons:
-        specifier: ^0.2.3
-        version: 0.2.3
+        specifier: ^0.7.0
+        version: 0.7.7
       modern-normalize:
         specifier: ^0.7.0
         version: 0.7.0
@@ -5421,8 +5421,8 @@ packages:
   material-design-icons@3.0.1:
     resolution: {integrity: sha512-t19Z+QZBwSZulxptEu05kIm+UyfIdJY1JDwI+nx02j269m6W414whiQz9qfvQIiLrdx71RQv+T48nHhuQXOCIQ==}
 
-  material-icons@0.2.3:
-    resolution: {integrity: sha512-1Q5wp4aeGWjE5POMtdLmqJn94QM7vmUCeJhNO5m0oDrtW1jfWlaLK73vF3C7/fuMD7NIVicyK8TSkwd+diFgaQ==}
+  material-icons@0.7.7:
+    resolution: {integrity: sha512-WzHzL+/QlcCRbF2aCElgv6r0ViRateatEQP/UOA502PitZNFF2BJIcGpzvJmMPShktkhhrLAFx+elDN7DcjXVQ==}
 
   math-expression-evaluator@1.4.0:
     resolution: {integrity: sha512-4vRUvPyxdO8cWULGTh9dZWL2tZK6LDBvj+OGHBER7poH9Qdt7kXEoj20wiz4lQUbUXQZFjPbe5mVDo9nutizCw==}
@@ -15013,7 +15013,7 @@ snapshots:
 
   material-design-icons@3.0.1: {}
 
-  material-icons@0.2.3: {}
+  material-icons@0.7.7: {}
 
   math-expression-evaluator@1.4.0: {}
 
