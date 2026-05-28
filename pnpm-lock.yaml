@@ -58,8 +58,8 @@ importers:
         specifier: ^4.5.19
         version: 4.5.19(less-loader@5.0.0(less@3.13.1)(webpack@4.47.0))(lodash@4.17.21)(prettier@1.19.1)(raw-loader@4.0.2(webpack@4.47.0))(typescript@3.9.10)(vue-template-compiler@2.7.16)(vue@2.7.16)
       '@vue/eslint-config-prettier':
-        specifier: ^6.0.0
-        version: 6.0.0(eslint-plugin-prettier@3.4.1(eslint@6.8.0)(prettier@1.19.1))(eslint@6.8.0)(prettier@1.19.1)
+        specifier: ^10.0.0
+        version: 10.2.0(eslint@6.8.0)(prettier@1.19.1)
       autoprefixer:
         specifier: ^9.8.8
         version: 9.8.8
@@ -131,7 +131,7 @@ importers:
         version: 0.5.2(eslint@6.8.0)
       eslint-plugin-prettier:
         specifier: ^3.4.1
-        version: 3.4.1(eslint@6.8.0)(prettier@1.19.1)
+        version: 3.4.1(eslint-config-prettier@10.1.8(eslint@6.8.0))(eslint@6.8.0)(prettier@1.19.1)
       eslint-plugin-promise:
         specifier: ^4.3.1
         version: 4.3.1
@@ -1051,6 +1051,10 @@ packages:
     peerDependencies:
       eslint: ^6.8.0
 
+  '@pkgr/core@0.3.6':
+    resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
@@ -1295,12 +1299,11 @@ packages:
   '@vue/component-compiler-utils@3.3.0':
     resolution: {integrity: sha512-97sfH2mYNU+2PzGrmK2haqffDpVASuib9/w2/noxiFi31Z54hW+q3izKQXXQZSNhtiUpAI36uSuYepeBe4wpHQ==}
 
-  '@vue/eslint-config-prettier@6.0.0':
-    resolution: {integrity: sha512-wFQmv45c3ige5EA+ngijq40YpVcIkAy0Lihupnsnd1Dao5CBbPyfCzqtejFLZX1EwH/kCJdpz3t6s+5wd3+KxQ==}
+  '@vue/eslint-config-prettier@10.2.0':
+    resolution: {integrity: sha512-GL3YBLwv/+b86yHcNNfPJxOTtVFJ4Mbc9UU3zR+KVoG7SwGTjPT+32fXamscNumElhcpXW3mT0DgzS9w32S7Bw==}
     peerDependencies:
-      eslint: '>= 5.0.0'
-      eslint-plugin-prettier: ^3.1.0
-      prettier: '>= 1.13.0'
+      eslint: '>= 8.21.0'
+      prettier: '>= 3.0.0'
 
   '@vue/preload-webpack-plugin@1.1.2':
     resolution: {integrity: sha512-LIZMuJk38pk9U9Ur4YzHjlIyMuxPlACdBIHH9/nGYVTsaGKOSnSuELiE8vS9wa+dJpIYspYUOqk+L1Q4pgHQHQ==}
@@ -3246,11 +3249,11 @@ packages:
     resolution: {integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==}
     engines: {node: '>=4'}
 
-  eslint-config-prettier@6.15.0:
-    resolution: {integrity: sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==}
+  eslint-config-prettier@10.1.8:
+    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
     hasBin: true
     peerDependencies:
-      eslint: '>=3.14.1'
+      eslint: '>=7.0.0'
 
   eslint-config-standard@14.1.1:
     resolution: {integrity: sha512-Z9B+VR+JIXRxz21udPTL9HpFMyoMUEeX1G251EQ6e05WD9aPVtVBn09XUmZ259wCMlCDmYDSZG62Hhm+ZTJcUg==}
@@ -3359,6 +3362,20 @@ packages:
       eslint-config-prettier: '*'
       prettier: '>=1.13.0'
     peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+
+  eslint-plugin-prettier@5.5.6:
+    resolution: {integrity: sha512-ifetmTcxWfz+4qRW3pH/ujdTq2jQIj59AxJMIN26K5avYgU8dxycUETQonWiW+wPrYXA0j3Try0l1CnwVQtDqQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      '@types/eslint': '>=8.0.0'
+      eslint: '>=8.0.0'
+      eslint-config-prettier: '>= 7.0.0 <10.0.0 || >=10.1.0'
+      prettier: '>=3.0.0'
+    peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
       eslint-config-prettier:
         optional: true
 
@@ -3826,6 +3843,7 @@ packages:
 
   friendly-errors-webpack-plugin@1.7.0:
     resolution: {integrity: sha512-K27M3VK30wVoOarP651zDmb93R9zF28usW4ocaK3mfQeIEI5BPht/EzZs5E8QLLwbLRJQMwscAjDxYPb1FuNiw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       webpack: ^2.0.0 || ^3.0.0 || ^4.0.0
 
@@ -3978,15 +3996,15 @@ packages:
 
   glob@6.0.4:
     resolution: {integrity: sha512-MKZeRNyYZAVVVG1oZeLaWie1uweH40m9AZwIwxyPbTSX4hHrVYSzLg0Ro5Z5R7XKkIX+Cc6oD1rqeDJnwsB8/A==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@7.1.3:
     resolution: {integrity: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   global-dirs@0.1.1:
     resolution: {integrity: sha512-NknMLn7F2J7aflwFOlGdNIuCDpN3VGoSoB+aap3KABFWbHVn1TCgFC+np23J8W2BiZbjfEw3BFBycSMv1AFblg==}
@@ -5777,6 +5795,7 @@ packages:
   node-version-matches@2.0.1:
     resolution: {integrity: sha512-oqk6+05FC0dNVY5NuXuhPEMq+m1b9ZjS9SIhVE9EjwCHZspnmjSO8npbKAEieinR8GeEgbecoQcYIvI/Kwcf6Q==}
     engines: {node: '>=8'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   node@13.14.0:
     resolution: {integrity: sha512-y5pClvPYkG7cTPRDmyNeCuOseyRFuZbrvQVbyAEhkfRWtfhyyu6lHYUjBSJzrSZXlbkCIlx+TKqLDAEhxc9Vkw==}
@@ -6809,6 +6828,10 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
+  prettier-linter-helpers@1.0.1:
+    resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
+    engines: {node: '>=6.0.0'}
+
   prettier-stylelint@0.4.2:
     resolution: {integrity: sha512-CmatjDsW8xKMtWg/Tc6/W02wC59p50kkItrXmkgbhR4b2EKMU5Pm55x1WuCahkkZeZoNVReWRxA8VL/s69mkBg==}
     hasBin: true
@@ -6896,7 +6919,7 @@ packages:
   puppeteer@2.1.1:
     resolution: {integrity: sha512-LWzaDVQkk1EPiuYeTOj+CZRIjda4k2s5w4MK4xoH2+kgWV/SDlkYHmxatDdtYrciHUKSXTsGgPgPP8ILVdBsxg==}
     engines: {node: '>=8.16.0'}
-    deprecated: < 22.8.2 is no longer supported
+    deprecated: < 24.15.0 is no longer supported
 
   q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
@@ -7924,6 +7947,10 @@ packages:
     deprecated: This SVGO version is no longer supported. Upgrade to v2.x.x.
     hasBin: true
 
+  synckit@0.11.13:
+    resolution: {integrity: sha512-eNRKgb3z66Yp3D2CixVujOUvXLFUTij/zVnV8KRyvFdQwpz7I5DS8UfRkTeLzb64u+dkzDSdelE24izu+zSSUg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+
   table-layout@1.0.2:
     resolution: {integrity: sha512-qd/R7n5rQTRFi+Zf2sk5XVVd9UQl6ZkduPFC3S7WEGJAmetDTjY3qPN50eSKzwuzEyQKy5TN2TiZdkIjos2L6A==}
     engines: {node: '>=8.0.0'}
@@ -8460,16 +8487,17 @@ packages:
 
   uuid@3.3.3:
     resolution: {integrity: sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache@2.4.0:
@@ -9779,6 +9807,8 @@ snapshots:
       - supports-color
       - typescript
 
+  '@pkgr/core@0.3.6': {}
+
   '@rtsao/scc@1.1.0': {}
 
   '@soda/friendly-errors-webpack-plugin@1.8.1(webpack@4.47.0)':
@@ -9795,14 +9825,14 @@ snapshots:
     dependencies:
       '@babel/core': 7.27.7
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
     transitivePeerDependencies:
       - supports-color
 
   '@stylelint/postcss-markdown@0.36.2(postcss-syntax@0.36.2)(postcss@7.0.39)':
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       remark: 13.0.0
       unist-util-find-all-after: 3.0.2
     transitivePeerDependencies:
@@ -10244,12 +10274,14 @@ snapshots:
       - walrus
       - whiskers
 
-  '@vue/eslint-config-prettier@6.0.0(eslint-plugin-prettier@3.4.1(eslint@6.8.0)(prettier@1.19.1))(eslint@6.8.0)(prettier@1.19.1)':
+  '@vue/eslint-config-prettier@10.2.0(eslint@6.8.0)(prettier@1.19.1)':
     dependencies:
       eslint: 6.8.0
-      eslint-config-prettier: 6.15.0(eslint@6.8.0)
-      eslint-plugin-prettier: 3.4.1(eslint@6.8.0)(prettier@1.19.1)
+      eslint-config-prettier: 10.1.8(eslint@6.8.0)
+      eslint-plugin-prettier: 5.5.6(eslint-config-prettier@10.1.8(eslint@6.8.0))(eslint@6.8.0)(prettier@1.19.1)
       prettier: 1.19.1
+    transitivePeerDependencies:
+      - '@types/eslint'
 
   '@vue/preload-webpack-plugin@1.1.2(html-webpack-plugin@3.2.0(webpack@4.47.0))(webpack@4.47.0)':
     dependencies:
@@ -12464,10 +12496,9 @@ snapshots:
       lodash.get: 4.4.2
       lodash.zip: 4.2.0
 
-  eslint-config-prettier@6.15.0(eslint@6.8.0):
+  eslint-config-prettier@10.1.8(eslint@6.8.0):
     dependencies:
       eslint: 6.8.0
-      get-stdin: 6.0.0
 
   eslint-config-standard@14.1.1(eslint-plugin-import@2.19.1(eslint@6.8.0))(eslint-plugin-node@11.1.0(eslint@6.8.0))(eslint-plugin-promise@4.3.1)(eslint-plugin-standard@4.1.0(eslint@6.8.0))(eslint@6.8.0):
     dependencies:
@@ -12623,11 +12654,22 @@ snapshots:
       - eslint
       - supports-color
 
-  eslint-plugin-prettier@3.4.1(eslint@6.8.0)(prettier@1.19.1):
+  eslint-plugin-prettier@3.4.1(eslint-config-prettier@10.1.8(eslint@6.8.0))(eslint@6.8.0)(prettier@1.19.1):
     dependencies:
       eslint: 6.8.0
       prettier: 1.19.1
       prettier-linter-helpers: 1.0.0
+    optionalDependencies:
+      eslint-config-prettier: 10.1.8(eslint@6.8.0)
+
+  eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@6.8.0))(eslint@6.8.0)(prettier@1.19.1):
+    dependencies:
+      eslint: 6.8.0
+      prettier: 1.19.1
+      prettier-linter-helpers: 1.0.1
+      synckit: 0.11.13
+    optionalDependencies:
+      eslint-config-prettier: 10.1.8(eslint@6.8.0)
 
   eslint-plugin-promise@4.3.1: {}
 
@@ -16257,7 +16299,7 @@ snapshots:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
 
   postcss-image-set-function@3.0.1:
     dependencies:
@@ -16289,7 +16331,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.27.7
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
     transitivePeerDependencies:
       - supports-color
 
@@ -16328,7 +16370,7 @@ snapshots:
   postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
 
@@ -16691,7 +16733,7 @@ snapshots:
       postcss-value-parser: 3.3.1
       svgo: 1.3.2
 
-  postcss-syntax@0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39):
+  postcss-syntax@0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
     optionalDependencies:
@@ -16780,6 +16822,10 @@ snapshots:
       - supports-color
 
   prettier-linter-helpers@1.0.0:
+    dependencies:
+      fast-diff: 1.3.0
+
+  prettier-linter-helpers@1.0.1:
     dependencies:
       fast-diff: 1.3.0
 
@@ -18112,7 +18158,7 @@ snapshots:
       postcss-sass: 0.4.4
       postcss-scss: 2.1.1
       postcss-selector-parser: 6.1.2
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
       slash: 3.0.0
@@ -18212,7 +18258,7 @@ snapshots:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-less@3.1.4)(postcss-scss@2.1.1)(postcss@7.0.39))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
@@ -18279,6 +18325,10 @@ snapshots:
       stable: 0.1.8
       unquote: 1.1.1
       util.promisify: 1.0.1
+
+  synckit@0.11.13:
+    dependencies:
+      '@pkgr/core': 0.3.6
 
   table-layout@1.0.2:
     dependencies:
